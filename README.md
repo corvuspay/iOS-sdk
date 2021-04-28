@@ -12,13 +12,9 @@
      - [Logging](#logging)
    
 # **Installation**
-1. Drag **CorvusWalletSDK.framework** into your project
-2. Make to embed **CorvusWalletSDK.framework** in Project -> General -> Frameworks
-<img src="https://lh3.googleusercontent.com/C3g5Y9VcpiA-fu2DO5NiOTrKrRd03HNGqccMk_1BkbCxR2b0-5aIxOsD26xwsmHpASeOx3zsK92GLtWNZ_6hHyuHGQtK0ei5giXOMmktNTm1JgmxDr7nSgbgrp5MyV08cv4wyF_X=w800" alt="" />
+1. Drag **CorvusWalletSDK.xcframework** into your target `Project -> General -> Frameworks, Libraries, and Embedded Content` 
 
-3. Open your **Info.plist**
-
-<img src="https://lh3.googleusercontent.com/M8qEnl6KREeQ1C8-qA0BYiqraqV4U5U5iNnTECWhEQCi5b4rgxYVRheWa-QiSFGTakynNwTcupgLlxm-iKbdSPHYoHbsPL43LgWndRj8vrsWXvwn0QyAVM5AwXoPjlPj44IOZo6c=w800" alt="" />
+2. Open your **Info.plist**
    
 a) Add **LSApplicationQueriesSchemes:corvuswallet**
            
@@ -56,7 +52,7 @@ CorvusWalletSDK.checkout(with checkout: Checkout, completion: ((String?, Checkou
 ### Checkout object
 A `Checkout` object is used to define purchase information. Here is the breakdown of the required and optional properties:
 
-**Required:**
+#### Required:
 - **storeId**: Store ID provided by Corvus
 - **orderNumber**: unique order identifier value
 - **language**: Language 
@@ -179,3 +175,4 @@ func application(_ app: UIApplication, open url: URL,
 &nbsp;
 ## Logging
 Set `CorvusWalletSDK.logLevel`, preferably in `AppDelegate didFinishLaunchingWithOptions`
+
