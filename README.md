@@ -60,7 +60,7 @@ A `Checkout` object is used to define purchase information. Here is the breakdow
 - **currency**: Currency you want to use for the checkout process
 - **amount**: total cost of the purchase
 - **version**: PayVersion
-- **signature**: Unique signature assigned by Corvus
+- **signature**: Requests must be signed/verified using HMAC-SHA256 where the key is a value known to the CorvusPay and the merchant. More details available in official integration manual.
 
 #### Optional:
 - **discountAmount**: total amount after discount
