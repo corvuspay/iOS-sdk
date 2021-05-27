@@ -59,8 +59,7 @@ A `Checkout` object is used to define purchase information. Here is the breakdow
 - **cart**: an array of CartItem objects you want to create a checkout process for
 - **currency**: Currency you want to use for the checkout process
 - **amount**: total cost of the purchase
-- **version**: PayVersion
-- **signature**: Requests must be signed/verified using HMAC-SHA256 where the key is a value known to the CorvusPay and the merchant. More details available in official integration manual.
+- **signature**: Requests must be signed/verified using HMAC-SHA256 where the key is a value known to the CorvusPay and the merchant. More details available in official integration manual. To create the String that needs to be signed, please use `CorvusWallet.createSignatureString(for: Checkout)`
 
 #### Optional:
 - **discountAmount**: total amount after discount
@@ -176,3 +175,6 @@ func application(_ app: UIApplication, open url: URL,
 ## Logging
 Set `CorvusWalletSDK.logLevel`, preferably in `AppDelegate didFinishLaunchingWithOptions`
 
+&nbsp;
+## Environment
+Set `CorvusWallet.environment`, preferably in `AppDelegate didFinishLaunchingWithOptions`
