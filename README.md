@@ -45,7 +45,7 @@ To use the SDK, we need to initialize the checkout process and set up all the re
 ### Checkout initialization
 To start a checkout process, we call the SDK `checkout` method, with a Checkout object and a completion block:
 ```swift
-CorvusWalletSDK.checkout(with checkout: Checkout, completion: ((String?, CheckoutResult) -> Void)?)
+CorvusWallet.checkout(with checkout: Checkout, completion: ((String?, CheckoutResult) -> Void)?)
 ```
 
 &nbsp;
@@ -168,12 +168,12 @@ In the AppDelegate add:
 ```swift
 func application(_ app: UIApplication, open url: URL, 
                  options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
-    return CorvusWalletSDK.handleWalletAppCallback(url: url)     
+    return CorvusWallet.handleWalletAppCallback(url: url)     
 }
 ```
 &nbsp;
 ## Logging
-Set `CorvusWalletSDK.logLevel`, preferably in `AppDelegate didFinishLaunchingWithOptions`
+Set `CorvusWallet.logLevel`, preferably in `AppDelegate didFinishLaunchingWithOptions`
 
 &nbsp;
 ## Environment
