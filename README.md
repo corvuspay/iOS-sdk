@@ -3,8 +3,9 @@
 </p>
 
 # **Content**
-- [Installation](#**installation**)
-- [Usage](#**usage**)
+- [Installation - Swift package manager](#**Swift package manager**)
+- [Installation - Without swift package manager](#**Installation - without swift package manager**)
+- [Usage](#**Usage**)
      - [Intro](#intro)
      - [Checkout](#checkout)
      - [Installments](#installments)
@@ -13,7 +14,7 @@
    
    ---
 
-## Swift Package Manager
+## **Swift Package Manager**
 ### Introduction
 CorvusWalletSDK version 2.0.x+ supports installation via [Swift Package Manager](https://swift.org/package-manager/).
 
@@ -42,7 +43,7 @@ Start to use CorvusWallet SDK
 
 ![Step 6](https://github.com/amit-kremer93/resources/blob/main/6.png)
 
-# **Installation (without swift package manage)**
+# **Installation - without swift package manager**
 1. Drag **CorvusWalletSDK.xcframework** into your target `Project -> General -> Frameworks, Libraries, and Embedded Content` 
 
 2. Open your **Info.plist**
