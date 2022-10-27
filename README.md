@@ -29,11 +29,11 @@ Enter the CorvusWalletSDK GitHub repository - ```https://github.com/corvuspay/iO
 
 Select the CorvusWalletSDK library
 
-![Step 3](https://github.com/amit-kremer93/resources/blob/main/3.png)
+![Step 3](https://github.com/Markobenacic/resources/blob/main/3.png)
 
 Import CorvusWalletSDK module
 
-![Step 4](https://github.com/amit-kremer93/resources/blob/main/4.png)
+![Step 4](https://github.com/Markobenacic/resources/blob/main/4.png)
 
 # **Installation - without swift package manager**
 1. Drag **CorvusWalletSDK.xcframework** into your target `Project -> General -> Frameworks, Libraries, and Embedded Content` 
