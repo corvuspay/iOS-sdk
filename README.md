@@ -5,7 +5,7 @@
 # **Content**
 - [Installation - Swift package manager](#Swift-package-manager)
 - [Installation - Without swift package manager](#Installation---without-swift-package-manager)
-- [Usage](#**Usage**)
+- [Usage](#Usage)
      - [Intro](#intro)
      - [Checkout](#checkout)
      - [Installments](#installments)
@@ -19,29 +19,21 @@
 CorvusWalletSDK version 2.0.x+ supports installation via [Swift Package Manager](https://swift.org/package-manager/).
 
 ### Installation
-In Xcode go to: ```File -> Swift Packages -> Add Package Dependency...```
+In Xcode go to: ```File -> Add packages...```
 
-![Step 1](https://github.com/amit-kremer93/resources/blob/main/1.png)
+![Step 1](https://github.com/Markobenacic/resources/blob/main/1.png)
 
-Enter the CorvusWalletSDK GitHub repository - ```https://github.com/corvuspay/iOS-sdk```
+Enter the CorvusWalletSDK GitHub repository - ```https://github.com/corvuspay/iOS-sdk``` and select the desired dependency rule
 
-![Step 2](https://github.com/amit-kremer93/resources/blob/main/2.png)
-
-Select the SDK version
-
-![Step 3](https://github.com/amit-kremer93/resources/blob/main/3.png)
+![Step 2](https://github.com/Markobenacic/resources/blob/main/2.png)
 
 Select the CorvusWalletSDK library
 
+![Step 3](https://github.com/amit-kremer93/resources/blob/main/3.png)
+
+Import CorvusWalletSDK module
+
 ![Step 4](https://github.com/amit-kremer93/resources/blob/main/4.png)
-
-In your ```AppDelegate``` file: import AppsFlyerLib module
-
-![Step 5](https://github.com/amit-kremer93/resources/blob/main/5.png)
-
-Start to use CorvusWallet SDK
-
-![Step 6](https://github.com/amit-kremer93/resources/blob/main/6.png)
 
 # **Installation - without swift package manager**
 1. Drag **CorvusWalletSDK.xcframework** into your target `Project -> General -> Frameworks, Libraries, and Embedded Content` 
