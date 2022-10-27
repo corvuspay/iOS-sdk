@@ -3,8 +3,8 @@
 </p>
 
 # **Content**
-- [Installation - Swift package manager](#**Swift-package-manager**)
-- [Installation - Without swift package manager](#**Installation---without-swift-package-manager**)
+- [Installation - Swift package manager](#Swift-package-manager)
+- [Installation - Without swift package manager](#Installation---without-swift-package-manager)
 - [Usage](#**Usage**)
      - [Intro](#intro)
      - [Checkout](#checkout)
