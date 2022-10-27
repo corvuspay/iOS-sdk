@@ -9,7 +9,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "iOS-sdk",
-            targets: ["CorvusWalletSDK"]),
+            targets: ["iOS-sdk"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
