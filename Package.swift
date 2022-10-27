@@ -4,11 +4,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "CorvusWalletSDK",
+    name: "iOS-sdk",
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "CorvusWalletSDK",
+            name: "iOS-sdk",
             targets: ["CorvusWalletSDK"]),
     ],
     dependencies: [
