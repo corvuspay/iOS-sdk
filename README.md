@@ -45,7 +45,7 @@ To use the SDK, we need to initialize the checkout process and set up all the re
 ### Checkout initialization
 To start a checkout process, we call the SDK `checkout` method, with a Checkout object and a completion block:
 ```swift
-CorvusWallet.checkout(with checkout: Checkout, completion: ((String?, CheckoutResult) -> Void)?)
+CorvusWallet.checkout(with checkout: Checkout, signature: String, completion: ((String?, CheckoutResult) -> Void)?)
 ```
 
 &nbsp;
