@@ -1,0 +1,11 @@
+framework module CorvusWalletSDK {
+  umbrella header "CorvusWalletSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module CorvusWalletSDK.Swift {
+  header "CorvusWalletSDK-Swift.h"
+  requires objc
+}
