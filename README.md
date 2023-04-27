@@ -59,20 +59,23 @@ A `Checkout` object is used to define purchase information. Here is the breakdow
 - **cart**: an array of CartItem objects you want to create a checkout process for
 - **currency**: Currency you want to use for the checkout process
 - **amount**: total cost of the purchase
+- **requireComplete**: set to true if transaction is preauthorization, otherwise to false
+- **isSdk**: Boolean, must be set to true
+- **version**: String, must be set to "1.3"
 - **signature**: Requests must be signed/verified using HMAC-SHA256 where the key is a value known to the CorvusPay and the merchant. More details available in official integration manual. To create the String that needs to be signed, please use `CorvusWallet.createSignatureString(for: Checkout)`
 
 #### Optional:
 - **discountAmount**: total amount after discount
-- **installments**: InstallmentsParams
 - **bestBefore**: 
-       - By setting it, the merchant specifies when the purchase time for the transaction expires (Int64 format)
+       - Value defining when the purchase time for the transaction expires (Epoch timestamp) (Int64 format)
        - Maximum time a merchant may specify is 900 seconds into the future
        - If not settled or if the value is out of the allowed range, it is set to 900 seconds
-- **cardholder**: Cardholder
+- **installments**: InstallmentsParams
 - **installmentsMap**: InstallmentMap
-- **completion**: 
-      - Completion block that gets called when checkout if finished
-      - Contains order number and CheckoutResult
+- **cardholder**: Cardholder
+- **useCardProfiles**: Boolean, true if card storage is used
+       - if card storage is used, transaction will allways be redirected to web
+- **userCardProfilesId**: String(50), unique user identification from merchant. Used to make connection between user (customer) and saved card.
 
 &nbsp;
 ## Installments
