@@ -48,7 +48,9 @@ extension CorvusWalletSDK.CorvusWallet {
   @objc public var completion: ((Swift.String?, CorvusWalletSDK.CheckoutResult) -> Swift.Void)?
   @objc public var useCardProfiles: Foundation.NSNumber?
   @objc public var userCardProfilesId: Swift.String?
-  required public init(storeId: Swift.Int, orderNumber: Swift.String, language: CorvusWalletSDK.Language, cart: [CorvusWalletSDK.CartItem], currency: CorvusWalletSDK.Currency, amount: Swift.Double, requireComplete: Swift.Bool, bestBefore: Swift.Int64, discountAmount: Swift.Double, installments: CorvusWalletSDK.InstallmentsParams?, installmentsMap: CorvusWalletSDK.InstallmentMap?, useCardProfiles: Swift.Bool? = nil, userCardProfilesId: Swift.String? = nil)
+  @objc public var isSdk: Swift.Bool
+  @objc public var version: Swift.String
+  required public init(storeId: Swift.Int, orderNumber: Swift.String, language: CorvusWalletSDK.Language, cart: [CorvusWalletSDK.CartItem], currency: CorvusWalletSDK.Currency, amount: Swift.Double, requireComplete: Swift.Bool, bestBefore: Swift.Int64 = CorvusWallet.noValueInt64, discountAmount: Swift.Double = CorvusWallet.noValueDouble, cardHolder: CorvusWalletSDK.Cardholder? = nil, installments: CorvusWalletSDK.InstallmentsParams? = nil, installmentsMap: CorvusWalletSDK.InstallmentMap? = nil, useCardProfiles: Swift.Bool? = nil, userCardProfilesId: Swift.String? = nil, isSdk: Swift.Bool, version: Swift.String)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class InstallmentsParams : ObjectiveC.NSObject {
@@ -65,6 +67,9 @@ extension CorvusWalletSDK.InstallmentsParams {
 extension CorvusWalletSDK.Cardholder {
   @objc override dynamic public var description: Swift.String {
     @objc get
+  }
+  public var signatureString: Swift.String {
+    get
   }
 }
 @objc @_hasMissingDesignatedInitializers public class InstallmentTuple : ObjectiveC.NSObject {
@@ -142,7 +147,7 @@ extension CorvusWalletSDK.Cardholder {
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class Cardholder : ObjectiveC.NSObject {
+@objc public class Cardholder : ObjectiveC.NSObject {
   @objc public var firstName: Swift.String?
   @objc public var lastName: Swift.String?
   @objc public var address: Swift.String?
@@ -152,7 +157,7 @@ extension CorvusWalletSDK.Cardholder {
   @objc public var countryCode: Swift.String?
   @objc public var email: Swift.String?
   @objc public var phone: Swift.String?
-  @objc override dynamic public init()
+  required public init(firstName: Swift.String? = nil, lastName: Swift.String? = nil, address: Swift.String? = nil, city: Swift.String? = nil, zip: Swift.String? = nil, country: Swift.String? = nil, countryCode: Swift.String? = nil, email: Swift.String? = nil, phone: Swift.String? = nil)
   @objc deinit
 }
 @objc public enum CardType : Swift.UInt {

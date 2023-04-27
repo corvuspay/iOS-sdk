@@ -316,7 +316,8 @@ SWIFT_CLASS("_TtC15CorvusWalletSDK10Cardholder")
 @property (nonatomic, copy) NSString * _Nullable countryCode;
 @property (nonatomic, copy) NSString * _Nullable email;
 @property (nonatomic, copy) NSString * _Nullable phone;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -361,6 +362,8 @@ SWIFT_CLASS("_TtC15CorvusWalletSDK8Checkout")
 @property (nonatomic, copy) void (^ _Nullable completion)(NSString * _Nullable, enum CheckoutResult);
 @property (nonatomic, strong) NSNumber * _Nullable useCardProfiles;
 @property (nonatomic, copy) NSString * _Nullable userCardProfilesId;
+@property (nonatomic) BOOL isSdk;
+@property (nonatomic, copy) NSString * _Nonnull version;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -404,7 +407,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) enum Environment environment;)
 ///
 /// \param amount number of items - Required
 ///
-/// \param requireComplete ignored? // TODO remove - Required
+/// \param requireComplete Required
 ///
 /// \param version CWSDKPayVersion - Required
 ///
@@ -916,7 +919,8 @@ SWIFT_CLASS("_TtC15CorvusWalletSDK10Cardholder")
 @property (nonatomic, copy) NSString * _Nullable countryCode;
 @property (nonatomic, copy) NSString * _Nullable email;
 @property (nonatomic, copy) NSString * _Nullable phone;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -961,6 +965,8 @@ SWIFT_CLASS("_TtC15CorvusWalletSDK8Checkout")
 @property (nonatomic, copy) void (^ _Nullable completion)(NSString * _Nullable, enum CheckoutResult);
 @property (nonatomic, strong) NSNumber * _Nullable useCardProfiles;
 @property (nonatomic, copy) NSString * _Nullable userCardProfilesId;
+@property (nonatomic) BOOL isSdk;
+@property (nonatomic, copy) NSString * _Nonnull version;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1004,7 +1010,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) enum Environment environment;)
 ///
 /// \param amount number of items - Required
 ///
-/// \param requireComplete ignored? // TODO remove - Required
+/// \param requireComplete Required
 ///
 /// \param version CWSDKPayVersion - Required
 ///
