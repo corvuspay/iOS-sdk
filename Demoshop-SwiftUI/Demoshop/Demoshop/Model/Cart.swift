@@ -42,13 +42,21 @@ class Cart: ObservableObject {
     }
 
     func remove(item: CartItem) {
-
         numberOfItems -= items.first(where: { cartItem in
             cartItem == item
         })?.quantity ?? 0
 
         items.removeAll { cartItem in
             cartItem == item
+        }
+    }
+
+    func removeOne(item: CartItem) {
+        if let exists = items.first(where: { cartItem in
+            cartItem == item
+        }), item.quantity > 1 {
+            exists.removeOne()
+            numberOfItems -= 1
         }
     }
 

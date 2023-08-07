@@ -42,7 +42,7 @@ class CartItem: Equatable, ObservableObject {
     }
 
     func removeOne() {
-        quantity += 1
+        quantity -= 1
     }
 
 }

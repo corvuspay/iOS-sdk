@@ -50,7 +50,7 @@ struct CartItemView: View {
             }
             .padding([.top,.bottom])
         }
-        .buttonStyle(PlainButtonStyle())
+        .buttonStyle(.plain)
     }
 
     private func addToCart() {
@@ -67,5 +67,7 @@ struct CartItemView: View {
 struct CartItemView_Previews: PreviewProvider {
     static var previews: some View {
         CartItemView(product:ShopItemsRepository.getRandomItem())
+            .previewLayout(.sizeThatFits)
+            .frame(width: 400, height: 150)
     }
 }

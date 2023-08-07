@@ -14,25 +14,21 @@ struct ContentView: View {
         NavigationView {
             ShopView()
                 .navigationTitle("CorvusPay Demo Shop")
-            //                .navigationBarItems(trailing: Image(systemName: "cart.fill"))
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
-                        if cart.items.isEmpty {
-                            Button(action: {
-                            }) {
-                                Image(systemName: "cart.fill")
-                                    .foregroundColor(.black)
+                        NavigationLink(destination: CheckoutView().environmentObject(cart)) {
+                                if cart.items.isEmpty {
+                                    Image(systemName: "cart.fill")
+                                        .foregroundColor(.black)
+                                } else {
+                                    Text("\(cart.items.count)")
+                                        .foregroundColor(.red)
+                                    Image(systemName: "cart.fill.badge.plus")
+                                        .foregroundColor(.red)
+                                }
                             }
-                        } else {
-                            Button(action: {
-                            }) {
-                                Text("\(cart.numberOfItems)")
-                                    .foregroundColor(.red)
-                                Image(systemName: "cart.fill")
-                                    .foregroundColor(.red)
-                            }
-                        }
                     }
+
                 }
         }
         .environmentObject(cart)
