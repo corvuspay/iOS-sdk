@@ -21,6 +21,7 @@
 		A78469A72A72B6AD009CC1A8 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78469A62A72B6AD009CC1A8 /* Cart.swift */; };
 		A79C69782A81597400E68F05 /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79C69772A81597400E68F05 /* PaymentView.swift */; };
 		A79C697B2A81626400E68F05 /* DemoShopButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79C697A2A81626400E68F05 /* DemoShopButtonStyle.swift */; };
+		A79C697D2A8197C100E68F05 /* InstallmentsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79C697C2A8197C100E68F05 /* InstallmentsHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		A78469A62A72B6AD009CC1A8 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		A79C69772A81597400E68F05 /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
 		A79C697A2A81626400E68F05 /* DemoShopButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoShopButtonStyle.swift; sourceTree = "<group>"; };
+		A79C697C2A8197C100E68F05 /* InstallmentsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallmentsHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				A78469952A72A2F9009CC1A8 /* ContentView.swift */,
 				A78469972A72A2FA009CC1A8 /* Assets.xcassets */,
 				A78469992A72A2FA009CC1A8 /* Preview Content */,
+				A79C697C2A8197C100E68F05 /* InstallmentsHelper.swift */,
 			);
 			path = Demoshop;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				A767F7832A7801A900A62C54 /* CartItemView.swift in Sources */,
 				A78469A32A72A8D4009CC1A8 /* Product.swift in Sources */,
 				A78469A72A72B6AD009CC1A8 /* Cart.swift in Sources */,
+				A79C697D2A8197C100E68F05 /* InstallmentsHelper.swift in Sources */,
 				A78469A52A72B188009CC1A8 /* CartItem.swift in Sources */,
 				A767F77B2A77E1BB00A62C54 /* ShopView.swift in Sources */,
 				A78469942A72A2F9009CC1A8 /* DemoshopApp.swift in Sources */,
@@ -363,6 +367,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,6 +397,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
