@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A754401F2A8264F20009CBF4 /* PaymentParametersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754401E2A8264F20009CBF4 /* PaymentParametersView.swift */; };
 		A767F77B2A77E1BB00A62C54 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767F77A2A77E1BB00A62C54 /* ShopView.swift */; };
 		A767F77E2A77E46000A62C54 /* ShopItemsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767F77D2A77E46000A62C54 /* ShopItemsRepository.swift */; };
 		A767F7832A7801A900A62C54 /* CartItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767F7822A7801A900A62C54 /* CartItemView.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A754401E2A8264F20009CBF4 /* PaymentParametersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentParametersView.swift; sourceTree = "<group>"; };
 		A767F77A2A77E1BB00A62C54 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
 		A767F77D2A77E46000A62C54 /* ShopItemsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItemsRepository.swift; sourceTree = "<group>"; };
 		A767F7822A7801A900A62C54 /* CartItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A754401D2A82637A0009CBF4 /* CorvusPay SDK helper */ = {
+			isa = PBXGroup;
+			children = (
+				A79C697C2A8197C100E68F05 /* InstallmentsHelper.swift */,
+			);
+			path = "CorvusPay SDK helper";
+			sourceTree = "<group>";
+		};
 		A767F77C2A77E2EF00A62C54 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +87,7 @@
 				A767F77A2A77E1BB00A62C54 /* ShopView.swift */,
 				A77C2ABC2A7FCB7B006D69F2 /* CheckoutView.swift */,
 				A79C69772A81597400E68F05 /* PaymentView.swift */,
+				A754401E2A8264F20009CBF4 /* PaymentParametersView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -110,6 +121,7 @@
 		A78469922A72A2F9009CC1A8 /* Demoshop */ = {
 			isa = PBXGroup;
 			children = (
+				A754401D2A82637A0009CBF4 /* CorvusPay SDK helper */,
 				A767F77F2A77FFA900A62C54 /* Views */,
 				A767F77C2A77E2EF00A62C54 /* Data */,
 				A78469A12A72A83D009CC1A8 /* Model */,
@@ -117,7 +129,6 @@
 				A78469952A72A2F9009CC1A8 /* ContentView.swift */,
 				A78469972A72A2FA009CC1A8 /* Assets.xcassets */,
 				A78469992A72A2FA009CC1A8 /* Preview Content */,
-				A79C697C2A8197C100E68F05 /* InstallmentsHelper.swift */,
 			);
 			path = Demoshop;
 			sourceTree = "<group>";
@@ -231,6 +242,7 @@
 				A767F77E2A77E46000A62C54 /* ShopItemsRepository.swift in Sources */,
 				A77C2ABD2A7FCB7B006D69F2 /* CheckoutView.swift in Sources */,
 				A77C2ABF2A7FE554006D69F2 /* CheckoutItemView.swift in Sources */,
+				A754401F2A8264F20009CBF4 /* PaymentParametersView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
