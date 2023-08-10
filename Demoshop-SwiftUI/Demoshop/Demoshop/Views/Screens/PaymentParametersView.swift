@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CorvusWalletSDK
 
 struct PaymentParametersView: View {
     private let pickedInstallments: InstallmentType

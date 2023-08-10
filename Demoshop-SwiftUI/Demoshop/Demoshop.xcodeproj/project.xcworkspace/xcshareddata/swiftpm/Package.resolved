@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/corvuspay/iOS-sdk.git",
+      "state" : {
+        "branch" : "demoShop-swiftUI",
+        "revision" : "60b43b74b84604de1575aef573c3ba77a11a5913"
+      }
+    }
+  ],
+  "version" : 2
+}

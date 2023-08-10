@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A754401F2A8264F20009CBF4 /* PaymentParametersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754401E2A8264F20009CBF4 /* PaymentParametersView.swift */; };
+		A75440222A82831D0009CBF4 /* CorvusWalletSDK in Frameworks */ = {isa = PBXBuildFile; productRef = A75440212A82831D0009CBF4 /* CorvusWalletSDK */; };
 		A767F77B2A77E1BB00A62C54 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767F77A2A77E1BB00A62C54 /* ShopView.swift */; };
 		A767F77E2A77E46000A62C54 /* ShopItemsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767F77D2A77E46000A62C54 /* ShopItemsRepository.swift */; };
 		A767F7832A7801A900A62C54 /* CartItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767F7822A7801A900A62C54 /* CartItemView.swift */; };
@@ -50,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A75440222A82831D0009CBF4 /* CorvusWalletSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +177,9 @@
 			dependencies = (
 			);
 			name = Demoshop;
+			packageProductDependencies = (
+				A75440212A82831D0009CBF4 /* CorvusWalletSDK */,
+			);
 			productName = Demoshop;
 			productReference = A78469902A72A2F9009CC1A8 /* Demoshop.app */;
 			productType = "com.apple.product-type.application";
@@ -203,6 +208,9 @@
 				Base,
 			);
 			mainGroup = A78469872A72A2F9009CC1A8;
+			packageReferences = (
+				A75440202A82831D0009CBF4 /* XCRemoteSwiftPackageReference "iOS-sdk" */,
+			);
 			productRefGroup = A78469912A72A2F9009CC1A8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -299,7 +307,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -353,7 +361,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -445,6 +453,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A75440202A82831D0009CBF4 /* XCRemoteSwiftPackageReference "iOS-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/corvuspay/iOS-sdk.git";
+			requirement = {
+				branch = "demoShop-swiftUI";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A75440212A82831D0009CBF4 /* CorvusWalletSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A75440202A82831D0009CBF4 /* XCRemoteSwiftPackageReference "iOS-sdk" */;
+			productName = CorvusWalletSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A78469882A72A2F9009CC1A8 /* Project object */;
 }
