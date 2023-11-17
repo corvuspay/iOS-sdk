@@ -1,5 +1,5 @@
 <p align="center">
-<img  src="[https://cdn.corvuspay.com/images/logo/CorvusPay-logo-vertical-bluebg-en@2x.png](https://cdn.corvuspay.com/images/logo/CorvusPay-logo-horizontal-en@2x.png)" alt=""/> 
+<img  src="https://cdn.corvuspay.com/images/logo/CorvusPay-logo-horizontal-en@2x.png" alt=""/> 
 </p>
 
 # **Content**
