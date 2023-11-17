@@ -1,7 +1,5 @@
 <p align="center">
-	<div style="background-color:#1d43ff; padding:25px;">
-		<img src="https://cdn.corvuspay.com/images/logo/CorvusPay-logo-horizontal-bluebg-en@2x.png" alt="CorvusPay logo" /> 
-	</div>
+	<img src="https://cdn.corvuspay.com/images/logo/CorvusPay-logo-horizontal-bluebg-solid.png" alt="CorvusPay logo" /> 
 </p>
 
 # **Content**
