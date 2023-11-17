@@ -1,5 +1,5 @@
 <p align="center">
-<img  src="https://cdn.corvuspay.com/images/logo/CorvusPay-logo-horizontal-en@2x.png" alt="" /> 
+<img  src="https://cdn.corvuspay.com/images/logo/CorvusPay-logo-vertical-bluebg-en@2x.png" alt="" style="background-color:#1d43ff; padding:25px;"t /> 
 </p>
 
 # **Content**
