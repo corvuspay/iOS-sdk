@@ -28,10 +28,9 @@ struct CheckoutView: View {
                 Text("Total: ")
                 Text(String(format: "%.2f", cart.getTotalPrice()))
             }
-            .padding([.horizontal])
+            .padding(.horizontal)
 
             NavigationLink(destination: PaymentView().environmentObject(cart)) {
-
                 Text("Proceed to checkout")
                     .fontWeight(.bold)
             }

@@ -11,17 +11,17 @@ struct ShopView: View {
     @State var shopItems = ShopItemsRepository.getShopItems()
 
     var body: some View {
-        List(shopItems, id: \.id) { product in
-            CartItemView(product: product)
-                .alignmentGuide(.listRowSeparatorLeading) { d in
-                    d[.leading]
-                }
-                .alignmentGuide(.listRowSeparatorTrailing) { d in
-                    d[.trailing]
-                }
+        ScrollView {
+            VStack {
+                ForEach(shopItems, id: \.id) { product in
+                    CartItemView(product: product)
 
+                    Divider()
+                }
+            }
+            .frame(maxWidth: .infinity)
+            .padding(.horizontal)
         }
-        .listSectionSeparator(.hidden, edges: .top)
     }
     
 }

@@ -12,21 +12,22 @@ struct CartItemView: View {
     @EnvironmentObject var cart: Cart
 
     var body: some View {
-        HStack {
+        HStack(spacing: 40) {
             image
-
-            VStack {
-                Text(product.name)
-                    .bold()
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                Spacer()
-                productInfo
-                Spacer()
-                addToCartButton
-            }
-            .padding([.top,.bottom])
+            detailsView
         }
+        .frame(maxWidth: .infinity, alignment: .leading)
         .buttonStyle(.plain)
+    }
+
+    private var detailsView: some View {
+        VStack(alignment: .center, spacing: 20) {
+            Text(product.name)
+                .bold()
+            productInfo
+            addToCartButton
+        }
+        .padding(.vertical)
     }
 
     private var image: some View {
@@ -49,22 +50,20 @@ struct CartItemView: View {
                 Text(String(format: "%.2f", product.price))
             }
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
     }
 
     private var addToCartButton: some View {
         Button("Add to cart") {
-            addToCart()
+            addToCardAction()
         }
         .fontWeight(.bold)
         .frame(width: 110, height: 40)
         .background(.blue)
         .foregroundColor(.white)
         .cornerRadius(12)
-        .frame(maxWidth: .infinity, alignment: .trailing)
     }
 
-    private func addToCart() {
+    private func addToCardAction() {
         if let cartItem = cart.items.first(where: { item in
             item == CartItem(product: product, quantity: 1)
         }) {
@@ -75,10 +74,10 @@ struct CartItemView: View {
     }
 }
 
-struct CartItemView_Previews: PreviewProvider {
-    static var previews: some View {
-        CartItemView(product:ShopItemsRepository.getRandomItem())
-            .previewLayout(.sizeThatFits)
-            .frame(width: 400, height: 150)
-    }
-}
+//struct CartItemView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CartItemView(product:ShopItemsRepository.getRandomItem())
+//            .previewLayout(.sizeThatFits)
+//            .frame(width: 400, height: 150)
+//    }
+//}

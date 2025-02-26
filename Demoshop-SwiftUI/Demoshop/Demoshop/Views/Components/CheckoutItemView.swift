@@ -91,8 +91,8 @@ struct CheckoutItemView: View {
     }
 }
 
-struct CheckoutItemView_Previews: PreviewProvider {
-    static var previews: some View {
-        CheckoutItemView(cartItem: CartItem(product: ShopItemsRepository.getRandomItem(), quantity: 1))
-    }
-}
+//struct CheckoutItemView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CheckoutItemView(cartItem: CartItem(product: ShopItemsRepository.getRandomItem(), quantity: 1))
+//    }
+//}
