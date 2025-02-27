@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7389FDD2D7082670054BE4B /* CheckoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7389FDC2D7082610054BE4B /* CheckoutHelper.swift */; };
 		A754401F2A8264F20009CBF4 /* PaymentParametersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754401E2A8264F20009CBF4 /* PaymentParametersView.swift */; };
 		A75440222A82831D0009CBF4 /* CorvusWalletSDK in Frameworks */ = {isa = PBXBuildFile; productRef = A75440212A82831D0009CBF4 /* CorvusWalletSDK */; };
 		A767F77B2A77E1BB00A62C54 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767F77A2A77E1BB00A62C54 /* ShopView.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A7389FDC2D7082610054BE4B /* CheckoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutHelper.swift; sourceTree = "<group>"; };
 		A754401E2A8264F20009CBF4 /* PaymentParametersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentParametersView.swift; sourceTree = "<group>"; };
 		A767F77A2A77E1BB00A62C54 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
 		A767F77D2A77E46000A62C54 /* ShopItemsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItemsRepository.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 		A754401D2A82637A0009CBF4 /* CorvusPay SDK helper */ = {
 			isa = PBXGroup;
 			children = (
+				A7389FDC2D7082610054BE4B /* CheckoutHelper.swift */,
 				A79C697C2A8197C100E68F05 /* InstallmentsHelper.swift */,
 			);
 			path = "CorvusPay SDK helper";
@@ -238,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A78469962A72A2F9009CC1A8 /* ContentView.swift in Sources */,
+				A7389FDD2D7082670054BE4B /* CheckoutHelper.swift in Sources */,
 				A79C69782A81597400E68F05 /* PaymentView.swift in Sources */,
 				A767F7832A7801A900A62C54 /* CartItemView.swift in Sources */,
 				A78469A32A72A8D4009CC1A8 /* Product.swift in Sources */,
