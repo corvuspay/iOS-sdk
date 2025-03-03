@@ -11,6 +11,10 @@ class Cart: ObservableObject {
     @Published var items: [CartItem] = []
     @Published var numberOfItems: Int = 0
 
+    public var totalCount: Int {
+        items.reduce(0) { $0 + $1.quantity }
+    }
+
     /*
      Returns: The total price as a Double if total discount exists; If there is no discount, returns zero.
     */

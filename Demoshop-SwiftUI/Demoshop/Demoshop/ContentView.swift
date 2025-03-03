@@ -21,7 +21,7 @@ struct ContentView: View {
                                     Image(systemName: "cart.fill")
                                         .foregroundColor(.black)
                                 } else {
-                                    Text("\(cart.items.count)")
+                                    Text("\(cart.totalCount)")
                                         .foregroundColor(.red)
                                     Image(systemName: "cart.fill.badge.plus")
                                         .foregroundColor(.red)
