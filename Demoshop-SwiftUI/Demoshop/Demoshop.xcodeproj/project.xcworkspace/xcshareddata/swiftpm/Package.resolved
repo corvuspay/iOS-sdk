@@ -1,4 +1,5 @@
 {
+  "originHash" : "81fe96d79e2a8cbef4c94bb1bae417e6798b29a238e4fc984adc240e1df345e6",
   "pins" : [
     {
       "identity" : "ios-sdk",
@@ -6,9 +7,9 @@
       "location" : "https://github.com/corvuspay/iOS-sdk.git",
       "state" : {
         "branch" : "demoShop-swiftUI",
-        "revision" : "60b43b74b84604de1575aef573c3ba77a11a5913"
+        "revision" : "73616cdd89a6b604ea2f72864c561079f1e97947"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

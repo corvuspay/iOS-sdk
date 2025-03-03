@@ -9,7 +9,7 @@ import Foundation
 import CorvusWalletSDK
 
 class CheckoutHelper {
-    func createCheckout(with installmentType: InstallmentType) -> Checkout {
-        
-    }
+//    func createCheckout(with installmentType: InstallmentType) -> Checkout {
+//        
+//    }
 }
