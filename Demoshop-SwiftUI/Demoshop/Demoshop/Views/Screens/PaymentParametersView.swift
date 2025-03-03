@@ -16,7 +16,15 @@ struct PaymentParametersView: View {
     }
 
     var body: some View {
-        Text(pickedInstallments.title)
+        ScrollView {
+            VStack {
+                Color.yellow
+                    .frame(height: 300)
+                Color.orange
+                    .frame(height: 300)
+            }
+        }
+        .navigationTitle(pickedInstallments.title)
     }
 }
 

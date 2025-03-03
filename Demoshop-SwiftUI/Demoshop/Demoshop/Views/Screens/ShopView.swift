@@ -15,7 +15,6 @@ struct ShopView: View {
             VStack {
                 ForEach(shopItems, id: \.id) { product in
                     CartItemView(product: product)
-
                     Divider()
                 }
             }
