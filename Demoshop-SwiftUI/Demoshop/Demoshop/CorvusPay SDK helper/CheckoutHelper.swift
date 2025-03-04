@@ -7,6 +7,7 @@
 
 import Foundation
 import CorvusWalletSDK
+import UIKit
 
 class CheckoutHelper {
     static func createCheckout(with installmentType: InstallmentType, cart: Cart) -> Checkout {
@@ -28,45 +29,70 @@ class CheckoutHelper {
 
         let discount = cart.getTotalDiscount() ?? 0
 
-        // Checkout duration (maximum 900 seconds)
-        let checkoutDurationSeconds = 600
-        let date = Calendar.current.date(byAdding: .second, value: checkoutDurationSeconds, to: Date())
-        let bestBefore = Int64(date?.timeIntervalSince1970 ?? 0)
+        let cardHolder = mockCardholder()
+        let cartArray = cartItemArray(from: cart)
 
-//        let cardHolderMock = Cardholder(firstName: "Marko", lastName: "Benacic", address: "Promorska 5", city: "Zagreb", zip: "10000", country: "Croatia", countryCode: "1", email: "marko@gmail.com", phone: "099999999999")
-//
-//        let adawiojwa = Cardholder()
-//
-//        let checkout = Checkout(storeId: Config.storeId,
-//                                orderNumber: orderNumber,
-//                                language: .en,
-//                                cart: Array(cart[..<numberOfItems]),
-//                                //                                cartS: cartS,
-//                                currency: currency,
-//                                amount: amount,
-//                                requireComplete: requireCompleteSwitch.isOn,
-//                                bestBefore: bestBefore,
-//                                discountAmount: (discount > 0 ? discount : CorvusWallet.noValueDouble),
-//                                cardHolder: cardHolderMock,
-//                                installments: installments,
-//                                installmentsMap: installmentsMap,
-//                                //                                useCardProfiles: useCardProfiles,
-//                                //                                userCardProfilesId: userCardProfilesId,
-//                                isSdk: true,
-//                                version: "1.4"
-//                                //                                creditorReference: "HR00841700-933108-611748",
-//                                //                                debtorIban: "HR5023400093000000003"
-//                                //                                voucherAmount: 15
-//                                //                                hideTab: "wallet"
-//                                //                                hideTabs: "wallet"
-//                                //                                shopAccountId: "sdfemr4lgfwrg"
+        let che
+
+//        let checkout = Checkout(
+//            storeId: storeId,
+//            orderNumber: orderNumber,
+//            language: .en,
+//            cart: cartArray,
+//            currency: Currency(.eur),
+//            amount: cart.getTotalPrice(),
+//            requireComplete: requireComplete,
+//            bestBefore: bestBefore,
+//            discountAmount: cart.getTotalDiscount() ?? 0,
+//            cardHolder: cardHolder,
+//            installments: installments,
+//            installmentsMap: installmentMap,
+//            isSdk: true,
+//            version: "1.4"
 //        )
-//        return checkout
+        return checkout
     }
 
     //        let signature = createDemoSignature(for: checkout)
 }
+
+// MARK: Mock data
 extension CheckoutHelper {
-    // Mocks
+    // Test (Corvus Shop)
+    static let secretKey = "mYRLilVm8mEXdLzFMreZaGO6Y"
+    static let storeId = 14423
+
+    static let orderNumber = ""
+
+    // TRUE if transaction is preauthorization, FALSE otherwise
+    static let requireComplete = false
+
+    static var bestBefore: Int64 {
+        // Checkout duration (maximum 900 seconds)
+        let checkoutDurationSeconds = 600
+        let date = Calendar.current.date(byAdding: .second, value: checkoutDurationSeconds, to: Date())
+        return Int64(date?.timeIntervalSince1970 ?? 0)
+    }
+
+    static func mockCardholder() -> Cardholder {
+        var cardHolder = Cardholder()
+        cardHolder.firstName = "Ivan"
+        cardHolder.lastName = "Horvat"
+        cardHolder.address = "Primorska ulica 10"
+        cardHolder.city = "Zagreb"
+        cardHolder.zip = "10000"
+        cardHolder.country = "Croatia"
+        cardHolder.countryCode = "1"
+        cardHolder.email = "ivan@gmail.com"
+        cardHolder.phone = "0991234567"
+
+        return cardHolder
+    }
+
+    static func cartItemArray(from cart: Cart) -> [CorvusWalletSDK.CartItem] {
+        cart.getItems().map { cartItem in
+            return CorvusWalletSDK.CartItem(name: cartItem.product.name, quantity: cartItem.quantity, image: UIImage(named: cartItem.product.image!)!)
+        }
+    }
 }
 
