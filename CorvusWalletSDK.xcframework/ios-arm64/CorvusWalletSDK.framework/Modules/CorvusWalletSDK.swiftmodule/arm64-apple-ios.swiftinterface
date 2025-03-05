@@ -1,12 +1,15 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CorvusWalletSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import CommonCrypto
 @_exported import CorvusWalletSDK
 import Foundation
 import Swift
 import UIKit
 import WebKit
+import _Concurrency
+import _StringProcessing
 @_inheritsConvenienceInitializers @objc public class CorvusWallet : ObjectiveC.NSObject {
   public static var shopURL: Swift.String?
   @objc public static let noValueInt64: Swift.Int64
@@ -23,7 +26,7 @@ import WebKit
   @objc override dynamic public init()
   @objc deinit
 }
-extension CorvusWallet {
+extension CorvusWalletSDK.CorvusWallet {
   @objc public static func createCWCheckoutViewController() -> UIKit.UIViewController
 }
 @objc public class Checkout : ObjectiveC.NSObject {
@@ -43,8 +46,11 @@ extension CorvusWallet {
   @objc public var cardHolder: CorvusWalletSDK.Cardholder?
   @objc public var installmentsMap: CorvusWalletSDK.InstallmentMap?
   @objc public var completion: ((Swift.String?, CorvusWalletSDK.CheckoutResult) -> Swift.Void)?
-  required public init(storeId: Swift.Int, orderNumber: Swift.String, language: CorvusWalletSDK.Language, cart: [CorvusWalletSDK.CartItem], currency: CorvusWalletSDK.Currency, amount: Swift.Double, requireComplete: Swift.Bool, bestBefore: Swift.Int64, discountAmount: Swift.Double, installments: CorvusWalletSDK.InstallmentsParams?, installmentsMap: CorvusWalletSDK.InstallmentMap?)
-  @objc override dynamic public init()
+  @objc public var useCardProfiles: Foundation.NSNumber?
+  @objc public var userCardProfilesId: Swift.String?
+  @objc public var isSdk: Swift.Bool
+  @objc public var version: Swift.String
+  required public init(storeId: Swift.Int, orderNumber: Swift.String, language: CorvusWalletSDK.Language, cart: [CorvusWalletSDK.CartItem], currency: CorvusWalletSDK.Currency, amount: Swift.Double, requireComplete: Swift.Bool, bestBefore: Swift.Int64 = CorvusWallet.noValueInt64, discountAmount: Swift.Double = CorvusWallet.noValueDouble, cardHolder: CorvusWalletSDK.Cardholder? = nil, installments: CorvusWalletSDK.InstallmentsParams? = nil, installmentsMap: CorvusWalletSDK.InstallmentMap? = nil, useCardProfiles: Swift.Bool? = nil, userCardProfilesId: Swift.String? = nil, isSdk: Swift.Bool, version: Swift.String)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class InstallmentsParams : ObjectiveC.NSObject {
@@ -53,21 +59,23 @@ extension CorvusWallet {
   @objc public var paymentAllDynamic: CorvusWalletSDK.DynamicInstallmentsParams?
   @objc deinit
 }
-extension InstallmentsParams {
+extension CorvusWalletSDK.InstallmentsParams {
   @objc public static func createWithPaymentAll(oneTimePayment: Swift.Bool, lowerBound: Swift.Int, upperBound: Swift.Int) -> CorvusWalletSDK.InstallmentsParams
   @objc public static func createWithFixedNumberOfInstallments(_ numberOfInstallments: Swift.Int) -> CorvusWalletSDK.InstallmentsParams
   @objc public static func createWithDynamicPayment(_ paymentAllDynamic: CorvusWalletSDK.DynamicInstallmentsParams) -> CorvusWalletSDK.InstallmentsParams
 }
-extension Cardholder {
+extension CorvusWalletSDK.Cardholder {
   @objc override dynamic public var description: Swift.String {
     @objc get
+  }
+  public var signatureString: Swift.String {
+    get
   }
 }
 @objc @_hasMissingDesignatedInitializers public class InstallmentTuple : ObjectiveC.NSObject {
   @objc public var oneTime: Swift.Bool
   @objc public var lowerBound: Swift.Int
   @objc public var upperBound: Swift.Int
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public enum Language : Swift.UInt {
@@ -112,7 +120,6 @@ extension Cardholder {
   @objc public var symbol: Swift.String {
     @objc get
   }
-  @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class DynamicInstallmentsParams : ObjectiveC.NSObject {
@@ -140,7 +147,7 @@ extension Cardholder {
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class Cardholder : ObjectiveC.NSObject {
+@objc public class Cardholder : ObjectiveC.NSObject {
   @objc public var firstName: Swift.String?
   @objc public var lastName: Swift.String?
   @objc public var address: Swift.String?
@@ -150,7 +157,7 @@ extension Cardholder {
   @objc public var countryCode: Swift.String?
   @objc public var email: Swift.String?
   @objc public var phone: Swift.String?
-  @objc override dynamic public init()
+  required public init(firstName: Swift.String? = nil, lastName: Swift.String? = nil, address: Swift.String? = nil, city: Swift.String? = nil, zip: Swift.String? = nil, country: Swift.String? = nil, countryCode: Swift.String? = nil, email: Swift.String? = nil, phone: Swift.String? = nil)
   @objc deinit
 }
 @objc public enum CardType : Swift.UInt {
@@ -231,8 +238,8 @@ public enum CorvusSdkError : Foundation.LocalizedError {
   }
   @objc override dynamic public init()
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @_inheritsConvenienceInitializers @objc public class CardConfiguration : ObjectiveC.NSObject, Swift.Codable {
   public var cardName: Swift.String
@@ -257,8 +264,8 @@ public enum CorvusSdkError : Foundation.LocalizedError {
     }
   }
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @objc public class Discount : ObjectiveC.NSObject, Swift.Codable {
   public var numberOfInstallments: Swift.Int
@@ -283,10 +290,9 @@ public enum CorvusSdkError : Foundation.LocalizedError {
     }
   }
   @objc public init(numberOfInstallments: Swift.Int, amount: Swift.Double, discountedAmount: Swift.Double)
-  @objc override dynamic public init()
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @_inheritsConvenienceInitializers @objc public class DiscountsBuilder : ObjectiveC.NSObject {
   @objc public func add(numberOfInstallments: Swift.Int, amount: Swift.Double, discountedAmount: Swift.Double) -> CorvusWalletSDK.DiscountsBuilder
@@ -310,7 +316,6 @@ public enum CorvusSdkError : Foundation.LocalizedError {
   @objc public var quantity: Swift.Int
   public var image: UIKit.UIImage
   required public init(name: Swift.String, quantity: Swift.Int, image: UIKit.UIImage)
-  @objc override dynamic public init()
   @objc deinit
 }
 extension CorvusWalletSDK.Language : Swift.Equatable {}
