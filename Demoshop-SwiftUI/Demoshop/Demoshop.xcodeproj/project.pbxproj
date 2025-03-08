@@ -139,6 +139,7 @@
 		A78469922A72A2F9009CC1A8 /* Demoshop */ = {
 			isa = PBXGroup;
 			children = (
+				A72CD8462D7C79D500659D73 /* ViewModels */,
 				A754401D2A82637A0009CBF4 /* CorvusPay SDK helper */,
 				A767F77F2A77FFA900A62C54 /* Views */,
 				A767F77C2A77E2EF00A62C54 /* Data */,
@@ -147,7 +148,6 @@
 				A78469952A72A2F9009CC1A8 /* ContentView.swift */,
 				A78469972A72A2FA009CC1A8 /* Assets.xcassets */,
 				A78469992A72A2FA009CC1A8 /* Preview Content */,
-				A72CD8462D7C79D500659D73 /* ViewModels */,
 			);
 			path = Demoshop;
 			sourceTree = "<group>";
