@@ -8,82 +8,6 @@
 import Foundation
 import CorvusWalletSDK
 
-enum InstallmentType: CaseIterable {
-    case noInstallments
-    case fixedInstallments
-    case installments
-    case dynamicInstallments
-    case installmentMap
-
-    var title: String {
-        switch self {
-        case .noInstallments:
-            return "NO INSTALLMENTS"
-        case .fixedInstallments:
-            return "FIXED INSTALLMENTS"
-        case .installments:
-            return "INSTALLMENTS"
-        case .dynamicInstallments:
-            return "DYNAMIC INSTALLMENTS"
-        case .installmentMap:
-            return "INSTALLMENT MAP"
-        }
-    }
-}
-
-extension InstallmentsParams {
-    var toString: String {
-        if let numberOfInstallments {
-            return String(numberOfInstallments)
-        } else if let paymentAll {
-            return paymentAll.toString
-        } else if let paymentAllDynamic {
-            return paymentAllDynamic.toString
-        } else {
-            return ""
-        }
-    }
-}
-
-extension DynamicInstallmentsParams {
-    var toString: String {
-        var stringBuilder = ""
-
-        if let paymentAmex {
-            stringBuilder.append("paymentAmex = " + paymentAmex.toString + "\n")
-        }
-        if let paymentJcb {
-            stringBuilder.append("paymentJcb = " + paymentJcb.toString + "\n")
-        }
-        if let paymentDina {
-            stringBuilder.append("paymentDina = " + paymentDina.toString + "\n")
-        }
-        if let paymentVisa {
-            stringBuilder.append("paymentVisa = " + paymentVisa.toString + "\n")
-        }
-        if let paymentDiners {
-            stringBuilder.append("paymentDiners = " + paymentDiners.toString + "\n")
-        }
-        if let paymentMaster {
-            stringBuilder.append("paymentMaster = " + paymentMaster.toString + "\n")
-        }
-        if let paymentMaestro {
-            stringBuilder.append("paymentMaestro = " + paymentMaestro.toString + "\n")
-        }
-        if let paymentDiscover {
-            stringBuilder.append("paymentDiscover = " + paymentDiscover.toString + "\n")
-        }
-
-        return stringBuilder.trimmingCharacters(in: .newlines)
-    }
-}
-
-extension InstallmentTuple {
-    var toString: String {
-        return "(\(oneTime), \(lowerBound), \(upperBound))"
-    }
-}
-
 class InstallmentsHelper {
 
     // Used when single payment only should be available
@@ -124,44 +48,52 @@ class InstallmentsHelper {
         return InstallmentsParams.createWithDynamicPayment(dynamicInstallmentsBuilder.build())
     }
 
-//    func mockInstallmentMap() -> InstallmentMap {
-//        var installmentMap = CorvusWalletSDK.InstallmentMap()
-//
-//        let discountOne = Discount(numberOfInstallments: 1, amount: 600, discountedAmount: 600)
-//        let discountTwo = Discount(numberOfInstallments: 2, amount: 610, discountedAmount: 610)
-//        let discountThreee = Discount(numberOfInstallments: 3, amount: 610, discountedAmount: 610)
-//        let discountThreeee = Discount(numberOfInstallments: 4, amount: 620, discountedAmount: 610)
-//        let installmentMockDiners = CardConfiguration()
-//        installmentMockDiners.cardName = "diners"
-//        installmentMockDiners.discounts = [discountOne, discountTwo, discountThreee, discountThreeee]
-//
-//        let discountVisaOne = Discount(numberOfInstallments: 1, amount: 1101, discountedAmount: 1001)
-//        let discountVisaTwo = Discount(numberOfInstallments: 2, amount: 1102, discountedAmount: 1002)
-////        let discountFour = Discount(numberOfInstallments: 3, amount: 1000, discountedAmount: 950)
-//
-//        let installmentMockVisa = CardConfiguration()
-//        installmentMockVisa.cardName = "visa"
-//        installmentMockVisa.discounts = [discountVisaOne, discountVisaTwo, discountThreee, discountThreeee]
-//
-//        let installmentMockMaestro = CardConfiguration()
-//        installmentMockMaestro.cardName = "maestro"
-//        installmentMockMaestro.discounts = [discountVisaOne, discountVisaTwo, discountThreee, discountThreeee]
-//
-//        let installmentMockMaster = CardConfiguration()
-//        installmentMockMaster.cardName = "master"
-//        installmentMockMaster.discounts = [discountVisaOne, discountVisaTwo, discountThreee, discountThreeee]
-//
-//
-//        let installmentMockJcb = CardConfiguration()
-//        installmentMockJcb.cardName = "jcb"
-//        installmentMockJcb.discounts = [discountVisaOne, discountVisaTwo, discountThreee, discountThreeee]
-//
-//        let installmentMockAmex = CardConfiguration()
-//        installmentMockAmex.cardName = "amex"
-//        installmentMockAmex.discounts = [discountVisaOne, discountVisaTwo, discountThreee, discountThreeee]
-//
-//        installmentMap.setInstallments(installments: [installmentMockDiners, installmentMockVisa, installmentMockMaestro, installmentMockMaster, installmentMockAmex, installmentMockJcb])
-//
-//        return installmentMap
-//    }
+    // Most versatile form of installments setup
+    static func mockInstallmentMap() -> InstallmentMap {
+        var installmentMap = InstallmentMap()
+
+        let discountOne = Discount(numberOfInstallments: 1, amount: 600, discountedAmount: 600)
+        let discountTwo = Discount(numberOfInstallments: 2, amount: 610, discountedAmount: 610)
+        let discountThreee = Discount(numberOfInstallments: 3, amount: 610, discountedAmount: 610)
+        let discountThreeee = Discount(numberOfInstallments: 4, amount: 620, discountedAmount: 610)
+        let installmentMockDiners = CardConfiguration()
+        installmentMockDiners.cardName = "diners"
+        installmentMockDiners.discounts = [discountOne, discountTwo, discountThreee, discountThreeee]
+
+        let discountVisaOne = Discount(numberOfInstallments: 1, amount: 1101, discountedAmount: 1001)
+        let discountVisaTwo = Discount(numberOfInstallments: 2, amount: 1102, discountedAmount: 1002)
+//        let discountFour = Discount(numberOfInstallments: 3, amount: 1000, discountedAmount: 950)
+
+        let installmentMockVisa = CardConfiguration()
+        installmentMockVisa.cardName = "visa"
+        installmentMockVisa.discounts = [discountVisaOne, discountVisaTwo, discountThreee, discountThreeee]
+
+        let installmentMockMaestro = CardConfiguration()
+        installmentMockMaestro.cardName = "maestro"
+        installmentMockMaestro.discounts = [discountVisaOne, discountVisaTwo, discountThreee, discountThreeee]
+
+        let installmentMockMaster = CardConfiguration()
+        installmentMockMaster.cardName = "master"
+        installmentMockMaster.discounts = [discountVisaOne, discountVisaTwo, discountThreee, discountThreeee]
+
+
+        let installmentMockJcb = CardConfiguration()
+        installmentMockJcb.cardName = "jcb"
+        installmentMockJcb.discounts = [discountVisaOne, discountVisaTwo, discountThreee, discountThreeee]
+
+        let installmentMockAmex = CardConfiguration()
+        installmentMockAmex.cardName = "amex"
+        installmentMockAmex.discounts = [discountVisaOne, discountVisaTwo, discountThreee, discountThreeee]
+
+        installmentMap.installments = [
+            installmentMockDiners,
+            installmentMockVisa,
+            installmentMockMaestro,
+            installmentMockMaster,
+            installmentMockAmex,
+            installmentMockJcb
+        ]
+
+        return installmentMap
+    }
 }

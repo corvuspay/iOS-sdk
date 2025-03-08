@@ -33,7 +33,7 @@ class CheckoutHelper {
         case .dynamicInstallments:
             installments = InstallmentsHelper.mockDynamicInstallments()
         case .installmentMap:
-            installmentMap = nil // mockinstallmentmap
+            installmentMap = InstallmentsHelper.mockInstallmentMap()
         }
 
         let cardHolder = mockCardholder()
@@ -95,48 +95,6 @@ class CheckoutHelper {
         .joined()
         .urlQueryEscaped
     }
-
-    // For UI purposes
-    static func checkoutParametersList(from checkout: Checkout, signature: String) -> [(String, String)] {
-        var parameters: [(String, String)] = []
-
-        parameters.append(("storeId", String(checkout.storeId)))
-        parameters.append(("orderId", checkout.orderNumber))
-        parameters.append(("language", checkout.language.description))
-        parameters.append(("currency", checkout.currency.code))
-        parameters.append(("amount", String(format: "%.2f", checkout.amount)))
-        parameters.append(("discount_amount", String(checkout.discountAmount)))
-
-        parameters.append(("requireComplete", String(checkout.requireComplete)))
-
-        if let cardholder = checkout.cardHolder {
-            parameters.append(("cardholder", (cardholder.firstName ?? "") + " " + (cardholder.lastName ?? "")))
-        }
-
-        parameters.append(("bestBefore", String(checkout.bestBefore)))
-
-        if let installmentsParams = checkout.installments {
-            parameters.append(("installmentsParams", installmentsParams.toString))
-        }
-        
-        // if let installmentsMap
-        parameters.append(("installmentsMap", "todo"))
-
-        if let useCardProfiles = checkout.useCardProfiles as? Bool {
-            parameters.append(("use_card_profiles", String(useCardProfiles)))
-        }
-
-        if let userCardProfilesId = checkout.userCardProfilesId {
-            parameters.append(("userCardProfilesId", userCardProfilesId))
-        }
-
-        parameters.append(("isSDK", String(checkout.isSdk)))
-        parameters.append(("version", checkout.version))
-        parameters.append(("signature", signature))
-
-        return parameters
-    }
-
 }
 
 // MARK: Mock data
@@ -180,5 +138,49 @@ extension CheckoutHelper {
                 image: UIImage(named: cartItem.product.image!)!
             )
         }
+    }
+}
+
+// MARK: For DemoShop UI
+extension CheckoutHelper {
+    static func checkoutParametersList(from checkout: Checkout, signature: String) -> [(String, String)] {
+        var parameters: [(String, String)] = []
+
+        parameters.append(("storeId", String(checkout.storeId)))
+        parameters.append(("orderId", checkout.orderNumber))
+        parameters.append(("language", checkout.language.description))
+        parameters.append(("currency", checkout.currency.code))
+        parameters.append(("amount", String(format: "%.2f", checkout.amount)))
+        parameters.append(("discount_amount", String(checkout.discountAmount)))
+
+        parameters.append(("requireComplete", String(checkout.requireComplete)))
+
+        if let cardholder = checkout.cardHolder {
+            parameters.append(("cardholder", (cardholder.firstName ?? "") + " " + (cardholder.lastName ?? "")))
+        }
+
+        parameters.append(("bestBefore", String(checkout.bestBefore)))
+
+        if let installmentsParams = checkout.installments {
+            parameters.append(("installmentsParams", installmentsParams.toString))
+        }
+
+        if let installmentsMap = checkout.installmentsMap {
+            parameters.append(("installmentsMap", installmentsMap.toString))
+        }
+
+        if let useCardProfiles = checkout.useCardProfiles as? Bool {
+            parameters.append(("use_card_profiles", String(useCardProfiles)))
+        }
+
+        if let userCardProfilesId = checkout.userCardProfilesId {
+            parameters.append(("userCardProfilesId", userCardProfilesId))
+        }
+
+        parameters.append(("isSDK", String(checkout.isSdk)))
+        parameters.append(("version", checkout.version))
+        parameters.append(("signature", signature))
+
+        return parameters
     }
 }
