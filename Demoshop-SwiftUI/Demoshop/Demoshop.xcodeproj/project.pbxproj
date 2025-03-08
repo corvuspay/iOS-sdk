@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A72CD8482D7C79E400659D73 /* PaymentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72CD8472D7C79E000659D73 /* PaymentViewModel.swift */; };
 		A7389FDD2D7082670054BE4B /* CheckoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7389FDC2D7082610054BE4B /* CheckoutHelper.swift */; };
 		A754401F2A8264F20009CBF4 /* PaymentParametersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754401E2A8264F20009CBF4 /* PaymentParametersView.swift */; };
 		A75440222A82831D0009CBF4 /* CorvusWalletSDK in Frameworks */ = {isa = PBXBuildFile; productRef = A75440212A82831D0009CBF4 /* CorvusWalletSDK */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A72CD8472D7C79E000659D73 /* PaymentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewModel.swift; sourceTree = "<group>"; };
 		A7389FDC2D7082610054BE4B /* CheckoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutHelper.swift; sourceTree = "<group>"; };
 		A754401E2A8264F20009CBF4 /* PaymentParametersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentParametersView.swift; sourceTree = "<group>"; };
 		A767F77A2A77E1BB00A62C54 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
@@ -60,6 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A72CD8462D7C79D500659D73 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A72CD8472D7C79E000659D73 /* PaymentViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		A754401D2A82637A0009CBF4 /* CorvusPay SDK helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +90,7 @@
 		A767F77F2A77FFA900A62C54 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A72CD8462D7C79D500659D73 /* ViewModels */,
 				A767F7812A77FFCF00A62C54 /* Components */,
 				A767F7802A77FFC900A62C54 /* Screens */,
 			);
@@ -251,6 +262,7 @@
 				A767F77B2A77E1BB00A62C54 /* ShopView.swift in Sources */,
 				A78469942A72A2F9009CC1A8 /* DemoshopApp.swift in Sources */,
 				A79C697B2A81626400E68F05 /* DemoShopButtonStyle.swift in Sources */,
+				A72CD8482D7C79E400659D73 /* PaymentViewModel.swift in Sources */,
 				A767F77E2A77E46000A62C54 /* ShopItemsRepository.swift in Sources */,
 				A77C2ABD2A7FCB7B006D69F2 /* CheckoutView.swift in Sources */,
 				A77C2ABF2A7FE554006D69F2 /* CheckoutItemView.swift in Sources */,

@@ -31,6 +31,59 @@ enum InstallmentType: CaseIterable {
     }
 }
 
+extension InstallmentsParams {
+    var toString: String {
+        if let numberOfInstallments {
+            return String(numberOfInstallments)
+        } else if let paymentAll {
+            return paymentAll.toString
+        } else if let paymentAllDynamic {
+            return paymentAllDynamic.toString
+        } else {
+            return ""
+        }
+    }
+}
+
+extension DynamicInstallmentsParams {
+    var toString: String {
+        var stringBuilder = ""
+
+        if let paymentAmex {
+            stringBuilder.append("paymentAmex = " + paymentAmex.toString + "\n")
+        }
+        if let paymentJcb {
+            stringBuilder.append("paymentJcb = " + paymentJcb.toString + "\n")
+        }
+        if let paymentDina {
+            stringBuilder.append("paymentDina = " + paymentDina.toString + "\n")
+        }
+        if let paymentVisa {
+            stringBuilder.append("paymentVisa = " + paymentVisa.toString + "\n")
+        }
+        if let paymentDiners {
+            stringBuilder.append("paymentDiners = " + paymentDiners.toString + "\n")
+        }
+        if let paymentMaster {
+            stringBuilder.append("paymentMaster = " + paymentMaster.toString + "\n")
+        }
+        if let paymentMaestro {
+            stringBuilder.append("paymentMaestro = " + paymentMaestro.toString + "\n")
+        }
+        if let paymentDiscover {
+            stringBuilder.append("paymentDiscover = " + paymentDiscover.toString + "\n")
+        }
+
+        return stringBuilder.trimmingCharacters(in: .newlines)
+    }
+}
+
+extension InstallmentTuple {
+    var toString: String {
+        return "(\(oneTime), \(lowerBound), \(upperBound))"
+    }
+}
+
 class InstallmentsHelper {
 
     // Used when single payment only should be available

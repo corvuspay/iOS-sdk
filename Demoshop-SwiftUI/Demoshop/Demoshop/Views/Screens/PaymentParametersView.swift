@@ -10,26 +10,61 @@ import CorvusWalletSDK
 
 struct PaymentParametersView: View {
     private let pickedInstallments: InstallmentType
-    
-    init(pickedInstallments: InstallmentType) {
+    private let cart: Cart
+    @State private var viewModel: PaymentViewModel
+
+    init(
+        pickedInstallments: InstallmentType,
+        cart: Cart
+    ) {
         self.pickedInstallments = pickedInstallments
+        self.cart = cart
+        self.viewModel = PaymentViewModel(pickedInstallments: pickedInstallments, cart: cart)
     }
 
     var body: some View {
         ScrollView {
             VStack {
-                Color.yellow
-                    .frame(height: 300)
-                Color.orange
-                    .frame(height: 300)
+                CheckoutParametersListView(viewModel: viewModel)
+
+                Button("Continue with payment") {
+                    viewModel.proceedToPayment()
+                }
+                .fontWeight(.bold)
+                .buttonStyle(DemoShopButtonStyle())
+                .padding(.top, 24)
             }
+            .padding()
         }
         .navigationTitle(pickedInstallments.title)
     }
-}
 
-struct PaymentParametersView_Previews: PreviewProvider {
-    static var previews: some View {
-        PaymentParametersView(pickedInstallments: .dynamicInstallments)
+    struct CheckoutParametersListView: View {
+        let viewModel: PaymentViewModel
+        private var checkoutParameters: [(String, String)] {
+            CheckoutHelper.checkoutParametersList(from: viewModel.checkout, signature: viewModel.signature)
+        }
+
+        var body: some View {
+            VStack {
+                ForEach(Array(checkoutParameters.enumerated()), id: \.0) { (index, parameterTouple) in
+                    HStack(alignment: .top, spacing: 16) {
+                        Text(parameterTouple.0)
+                            .frame(maxWidth: .infinity, alignment: .trailing)
+                        Text(parameterTouple.1)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    }
+
+                    if index != checkoutParameters.count - 1 {
+                        Divider()
+                    }
+                }
+            }
+            .padding()
+            .overlay {
+                RoundedRectangle(cornerRadius: 16)
+                    .stroke(.gray, lineWidth: 2)
+            }
+        }
     }
 }

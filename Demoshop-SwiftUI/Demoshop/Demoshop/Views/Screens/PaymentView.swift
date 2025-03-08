@@ -19,7 +19,10 @@ struct PaymentView: View {
 
             ForEach(InstallmentType.allCases, id: \.self) { installmentType in
                 NavigationLink {
-                    PaymentParametersView(pickedInstallments: installmentType)
+                    PaymentParametersView(
+                        pickedInstallments: installmentType,
+                        cart: cart
+                    )
                 } label: {
                     Text(installmentType.title)
                         .frame(maxWidth: .infinity)
@@ -29,7 +32,6 @@ struct PaymentView: View {
             
             Spacer()
         }
-
         .fontWeight(.bold)
         .buttonStyle(DemoShopButtonStyle())
     }

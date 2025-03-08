@@ -6,12 +6,17 @@
 //
 
 import SwiftUI
+import CorvusWalletSDK
 
 @main
 struct DemoshopApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear {
+                    CorvusWallet.logLevel = .debug
+                    CorvusWallet.environment = .test
+                }
         }
     }
 }
