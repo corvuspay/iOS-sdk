@@ -27,6 +27,7 @@
 		A79C69782A81597400E68F05 /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79C69772A81597400E68F05 /* PaymentView.swift */; };
 		A79C697B2A81626400E68F05 /* DemoShopButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79C697A2A81626400E68F05 /* DemoShopButtonStyle.swift */; };
 		A79C697D2A8197C100E68F05 /* InstallmentsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79C697C2A8197C100E68F05 /* InstallmentsHelper.swift */; };
+		A7D0E0CF2D7EECF200A4313D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0E0CE2D7EECF000A4313D /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,8 @@
 		A79C69772A81597400E68F05 /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
 		A79C697A2A81626400E68F05 /* DemoShopButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoShopButtonStyle.swift; sourceTree = "<group>"; };
 		A79C697C2A8197C100E68F05 /* InstallmentsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallmentsHelper.swift; sourceTree = "<group>"; };
+		A7D0E0CE2D7EECF000A4313D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A7D0E0D22D7EFFDC00A4313D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +142,8 @@
 		A78469922A72A2F9009CC1A8 /* Demoshop */ = {
 			isa = PBXGroup;
 			children = (
+				A7D0E0D22D7EFFDC00A4313D /* Info.plist */,
+				A7D0E0CE2D7EECF000A4313D /* AppDelegate.swift */,
 				A72CD8462D7C79D500659D73 /* ViewModels */,
 				A754401D2A82637A0009CBF4 /* CorvusPay SDK helper */,
 				A767F77F2A77FFA900A62C54 /* Views */,
@@ -266,6 +271,7 @@
 				A78469942A72A2F9009CC1A8 /* DemoshopApp.swift in Sources */,
 				A79C697B2A81626400E68F05 /* DemoShopButtonStyle.swift in Sources */,
 				A72CD8482D7C79E400659D73 /* PaymentViewModel.swift in Sources */,
+				A7D0E0CF2D7EECF200A4313D /* AppDelegate.swift in Sources */,
 				A72CD84A2D7C848700659D73 /* InstallmentType.swift in Sources */,
 				A767F77E2A77E46000A62C54 /* ShopItemsRepository.swift in Sources */,
 				A77C2ABD2A7FCB7B006D69F2 /* CheckoutView.swift in Sources */,
@@ -402,7 +408,7 @@
 				DEVELOPMENT_TEAM = T5498SXSD7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Demoshop/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -432,7 +438,7 @@
 				DEVELOPMENT_TEAM = T5498SXSD7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Demoshop/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

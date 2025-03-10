@@ -10,12 +10,17 @@ import CorvusWalletSDK
 
 @main
 struct DemoshopApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .onAppear {
                     CorvusWallet.logLevel = .debug
                     CorvusWallet.environment = .test
+                }
+                .onOpenURL { url in
+                    _ = CorvusWallet.handleWalletAppCallback(url: url)
                 }
         }
     }
