@@ -8,9 +8,16 @@
 import Foundation
 import CorvusWalletSDK
 
-class PaymentViewModel {
+struct PaymentAlertItem {
+    let text: String
+    let isError: Bool
+}
+
+class PaymentViewModel: ObservableObject {
     public let checkout: Checkout
     public let signature: String
+
+    @Published var alert: PaymentAlertItem?
 
     init(
         pickedInstallments: InstallmentType,
@@ -28,31 +35,28 @@ class PaymentViewModel {
 
         CorvusWallet.checkout(with: checkout, signature: signature) { [weak self] responseData, result in
 
-            print("CALLBACK")
-
             if let responseData {
                 print("response data: \n" + responseData)
             }
 
             switch result {
             case .success:
-                print("success")
-//                self?.showAlert(message: "Order " + orderNumber + " placed successfully!")
+                self?.alert = PaymentAlertItem(text: "Order placed successfully", isError: false)
             case .checkoutError:
-                print("success")
-//                self?.showErrorAlert(message: "Order " + orderNumber + " not processed.")
+                self?.alert = PaymentAlertItem(text: "Order not processed", isError: true)
             case .networkError:
-                print("success")
-//                self?.showErrorAlert(message: "Network connection error.")
+                self?.alert = PaymentAlertItem(text: "Network connection error", isError: true)
             case .canceled:
-                print("success")
-//                self?.showErrorAlert(message: "Order cancelled")
+                self?.alert = PaymentAlertItem(text: "Order cancelled", isError: true)
             case .validationFailed:
-                print("success")
-//                self?.showErrorAlert(message: "Please double check checkout parameters")
+                self?.alert = PaymentAlertItem(text: "Please double check checkout parameters", isError: true)
             default:
                 break
             }
         }
+    }
+
+    func dismissAlert() {
+        alert = nil
     }
 }

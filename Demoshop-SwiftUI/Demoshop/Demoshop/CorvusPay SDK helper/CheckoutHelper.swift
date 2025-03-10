@@ -104,7 +104,9 @@ extension CheckoutHelper {
     static let storeId = 14423
     static let version = "1.4"
 
-    static let orderNumber = Int.random(in: 1...Int.max)
+    static var orderNumber: Int {
+        Int.random(in: 1...Int.max)
+    }
 
     // TRUE if transaction is preauthorization, FALSE otherwise
     static let requireComplete = false

@@ -11,7 +11,7 @@ import CorvusWalletSDK
 struct PaymentParametersView: View {
     private let pickedInstallments: InstallmentType
     private let cart: Cart
-    @State private var viewModel: PaymentViewModel
+    @StateObject private var viewModel: PaymentViewModel
 
     init(
         pickedInstallments: InstallmentType,
@@ -19,7 +19,7 @@ struct PaymentParametersView: View {
     ) {
         self.pickedInstallments = pickedInstallments
         self.cart = cart
-        self.viewModel = PaymentViewModel(pickedInstallments: pickedInstallments, cart: cart)
+        _viewModel = StateObject(wrappedValue: PaymentViewModel(pickedInstallments: pickedInstallments, cart: cart))
     }
 
     var body: some View {
@@ -37,6 +37,13 @@ struct PaymentParametersView: View {
             .padding()
         }
         .navigationTitle(pickedInstallments.title)
+        .alert("", isPresented: .constant(viewModel.alert != nil)) {
+            Button("OK") {
+                viewModel.dismissAlert()
+            }
+        } message: {
+            Text(viewModel.alert?.text ?? "")
+        }
     }
 
     struct CheckoutParametersListView: View {
