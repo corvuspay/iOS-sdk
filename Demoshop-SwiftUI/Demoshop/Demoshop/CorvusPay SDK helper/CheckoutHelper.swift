@@ -39,6 +39,8 @@ class CheckoutHelper {
         let cardHolder = mockCardholder()
         let cartArray = cartItemArray(from: cart)
 
+        let discountedAmount = cart.getTotalPrice() - (cart.getTotalDiscount() ?? 0)
+
         let checkout = Checkout(
             storeId: storeId,
             orderNumber: String(orderNumber),
@@ -48,7 +50,7 @@ class CheckoutHelper {
             amount: cart.getTotalPrice(),
             requireComplete: requireComplete,
             bestBefore: bestBefore,
-            discountAmount: cart.getTotalDiscount() ?? 0,
+            discountAmount: discountedAmount,
             cardHolder: cardHolder,
             installments: installments,
             installmentsMap: installmentMap,
