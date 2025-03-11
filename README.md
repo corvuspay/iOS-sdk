@@ -35,20 +35,44 @@ Import CorvusWalletSDK module
 
 ![Step 4](https://github.com/Markobenacic/resources/blob/main/4.png)
 
+Set desired environment and logLevel
+
+![Step 5](https://github.com/user-attachments/assets/0a4859ee-c7f7-4e9b-b01e-0f575890cb50)
+
+
+### Optional - If your app wants to open the CorvusWallet app
+1. Open your **Info.plist**
+   1.1. Add **LSApplicationQueriesSchemes:corvuswallet**
+
+        Adding this property to info.plist is required if your app wants to open the CorvusWallet app
+   
+   > 📚 **Tip:** If you are having trouble adding the property - Refer to the info.plist in our Demoshop. 
+
+2. Add **callback handling**
+   > 🔍 Used for showing your users **status** of the processed transaction.
+   
+   > 📚 **Tip:** Refer to our Demoshop for examples of callback usage.
+
+   ![Enable callback](https://github.com/user-attachments/assets/10ac0952-8916-4a88-9dd6-76f54131fd0c)
+
+   
+
 # **Installation - without swift package manager**
 1. Drag **CorvusWalletSDK.xcframework** into your target `Project -> General -> Frameworks, Libraries, and Embedded Content` 
 
 2. Open your **Info.plist**
    
-a) Add **LSApplicationQueriesSchemes:corvuswallet**
-           
-<img src="https://lh3.googleusercontent.com/a-KnSWHOlGt4htiKjKBphnJ_ByYZ7dZmpZWhlsDnqhkgnXctXxbJJjbTRG-ELKH0kXS3y4S40frynO04dQj2EUqDvOsE5pa0CQaC4HfaCWuJQm_S6PThxc1fyBZrPbPdObAUyZC7=w800" alt="" />
-            
-**NOTE**: `Required if your app wants to open the CorvusWallet app` 
+   2.1. Add **LSApplicationQueriesSchemes:corvuswallet**
+   
+        Adding this property to info.plist is required if your app wants to open the CorvusWallet app
+   
+   > 📚 **Tip:** If you are having trouble adding the property - Refer to the info.plist in our Demoshop.
 
-b) Add **callback handling**
+4. Add **callback handling**
+   > 🔍 Used for showing your users **status** of the processed transaction.
+   
+   > 📚 **Tip:** Refer to our Demoshop for examples of callback usage.
 
-<img src="https://lh3.googleusercontent.com/cyHiQ9Hb6bmA2ylBpx6aKp5kfpZsTv-rAiTc7U3fpGnyxqqU53oC5ut5cgS2CEk_dewXQrmN7fWn2roB7S-5BmSgyPr_nDINUknyZuO031b_koik8vJOAO4gDUCpXUSMr89GXZJ3=w800" alt="" />
 
 # **Usage**
 
