@@ -13,6 +13,8 @@ struct PaymentParametersView: View {
     private let cart: Cart
     @StateObject private var viewModel: PaymentViewModel
 
+    @SwiftUICore.Environment(\.dismiss) private var dismiss
+
     init(
         pickedInstallments: InstallmentType,
         cart: Cart
@@ -40,6 +42,7 @@ struct PaymentParametersView: View {
         .alert("", isPresented: .constant(viewModel.alert != nil)) {
             Button("OK") {
                 viewModel.dismissAlert()
+                dismiss()
             }
         } message: {
             Text(viewModel.alert?.text ?? "")
