@@ -49,51 +49,142 @@ class InstallmentsHelper {
     }
 
     // Most versatile form of installments setup
-    static func mockInstallmentMap() -> InstallmentMap {
-        var installmentMap = InstallmentMap()
+    static func mockInstallmentMap() -> InstallmentMap? {
+        // diners
+        let dinersDiscounts = DiscountsBuilder()
+            .add(numberOfInstallments: 1, amount: 600, discountedAmount: 600)
+            .add(numberOfInstallments: 2, amount: 610, discountedAmount: 610)
+            .add(numberOfInstallments: 3, amount: 610, discountedAmount: 610)
+            .add(numberOfInstallments: 4, amount: 620, discountedAmount: 610)
+            .add(numberOfInstallments: 5, amount: 630, discountedAmount: 620)
+            .build()
 
-        let discountOne = Discount(numberOfInstallments: 1, amount: 600, discountedAmount: 600)
-        let discountTwo = Discount(numberOfInstallments: 2, amount: 610, discountedAmount: 610)
-        let discountThreee = Discount(numberOfInstallments: 3, amount: 610, discountedAmount: 610)
-        let discountThreeee = Discount(numberOfInstallments: 4, amount: 620, discountedAmount: 610)
-        let installmentMockDiners = CardConfiguration()
-        installmentMockDiners.cardName = "diners"
-        installmentMockDiners.discounts = [discountOne, discountTwo, discountThreee, discountThreeee]
+        // visa
+        let visaDiscounts = DiscountsBuilder()
+            .add(numberOfInstallments: 1, amount: 1101, discountedAmount: 1001)
+            .add(numberOfInstallments: 2, amount: 1102, discountedAmount: 1002)
+            .add(numberOfInstallments: 3, amount: 1103, discountedAmount: 1002)
+            .add(numberOfInstallments: 4, amount: 1200, discountedAmount: 1050)
+            .build()
 
-        let discountVisaOne = Discount(numberOfInstallments: 1, amount: 1101, discountedAmount: 1001)
-        let discountVisaTwo = Discount(numberOfInstallments: 2, amount: 1102, discountedAmount: 1002)
-//        let discountFour = Discount(numberOfInstallments: 3, amount: 1000, discountedAmount: 950)
+        // maestro
+        let maestroDiscounts = DiscountsBuilder()
+            .add(numberOfInstallments: 1, amount: 500, discountedAmount: 490)
+            .add(numberOfInstallments: 2, amount: 510, discountedAmount: 500)
+            .add(numberOfInstallments: 3, amount: 515, discountedAmount: 505)
+            .add(numberOfInstallments: 4, amount: 520, discountedAmount: 510)
+            .build()
 
-        let installmentMockVisa = CardConfiguration()
-        installmentMockVisa.cardName = "visa"
-        installmentMockVisa.discounts = [discountVisaOne, discountVisaTwo, discountThreee, discountThreeee]
+        // master
+        let masterDiscounts = DiscountsBuilder()
+            .add(numberOfInstallments: 1, amount: 1000, discountedAmount: 980)
+            .add(numberOfInstallments: 2, amount: 1020, discountedAmount: 990)
+            .add(numberOfInstallments: 3, amount: 1030, discountedAmount: 1000)
+            .add(numberOfInstallments: 4, amount: 1050, discountedAmount: 1020)
+            .build()
 
-        let installmentMockMaestro = CardConfiguration()
-        installmentMockMaestro.cardName = "maestro"
-        installmentMockMaestro.discounts = [discountVisaOne, discountVisaTwo, discountThreee, discountThreeee]
+        // jcb
+        let jcbDiscounts = DiscountsBuilder()
+            .add(numberOfInstallments: 1, amount: 700, discountedAmount: 680)
+            .add(numberOfInstallments: 2, amount: 710, discountedAmount: 690)
+            .add(numberOfInstallments: 3, amount: 720, discountedAmount: 700)
+            .add(numberOfInstallments: 4, amount: 730, discountedAmount: 710)
+            .build()
 
-        let installmentMockMaster = CardConfiguration()
-        installmentMockMaster.cardName = "master"
-        installmentMockMaster.discounts = [discountVisaOne, discountVisaTwo, discountThreee, discountThreeee]
+        // amex
+        let amexDiscounts = DiscountsBuilder()
+            .add(numberOfInstallments: 1, amount: 900, discountedAmount: 880)
+            .add(numberOfInstallments: 2, amount: 910, discountedAmount: 890)
+            .add(numberOfInstallments: 3, amount: 920, discountedAmount: 900)
+            .add(numberOfInstallments: 4, amount: 930, discountedAmount: 910)
+            .build()
 
+        // build
+        let customInstallmentsMap = InstallmentsMapBuilder()
+            .create(withCard: .diners, withDiscounts: dinersDiscounts)
+            .create(withCard: .visa, withDiscounts: visaDiscounts)
+            .create(withCard: .maestro, withDiscounts: maestroDiscounts)
+            .create(withCard: .master, withDiscounts: masterDiscounts)
+            .create(withCard: .jcb, withDiscounts: jcbDiscounts)
+            .create(withCard: .amex, withDiscounts: amexDiscounts)
+            .build()
 
-        let installmentMockJcb = CardConfiguration()
-        installmentMockJcb.cardName = "jcb"
-        installmentMockJcb.discounts = [discountVisaOne, discountVisaTwo, discountThreee, discountThreeee]
-
-        let installmentMockAmex = CardConfiguration()
-        installmentMockAmex.cardName = "amex"
-        installmentMockAmex.discounts = [discountVisaOne, discountVisaTwo, discountThreee, discountThreeee]
-
-        installmentMap.installments = [
-            installmentMockDiners,
-            installmentMockVisa,
-            installmentMockMaestro,
-            installmentMockMaster,
-            installmentMockAmex,
-            installmentMockJcb
-        ]
-
-        return installmentMap
+        return customInstallmentsMap
     }
+
+    // Another possible implementation
+//    static func mockInstallmentMap2() -> InstallmentMap {
+//        var installmentMap = InstallmentMap()
+//
+//        // diners
+//        let discountOneDiners = Discount(numberOfInstallments: 1, amount: 600, discountedAmount: 600)
+//        let discountTwoDiners = Discount(numberOfInstallments: 2, amount: 610, discountedAmount: 610)
+//        let discountThreeDiners = Discount(numberOfInstallments: 3, amount: 610, discountedAmount: 610)
+//        let discountFourDiners = Discount(numberOfInstallments: 4, amount: 620, discountedAmount: 610)
+//
+//        let installmentMockDiners = CardConfiguration()
+//        installmentMockDiners.cardName = "diners"
+//        installmentMockDiners.discounts = [discountOneDiners, discountTwoDiners, discountThreeDiners, discountFourDiners]
+//
+//        // visa
+//        let discountVisaOne = Discount(numberOfInstallments: 1, amount: 1101, discountedAmount: 1001)
+//        let discountVisaTwo = Discount(numberOfInstallments: 2, amount: 1102, discountedAmount: 1002)
+//        let discountVisaThree = Discount(numberOfInstallments: 3, amount: 1103, discountedAmount: 1002)
+//        let discountVisaFour = Discount(numberOfInstallments: 4, amount: 1200, discountedAmount: 1050)
+//
+//        let installmentMockVisa = CardConfiguration()
+//        installmentMockVisa.cardName = "visa"
+//        installmentMockVisa.discounts = [discountVisaOne, discountVisaTwo, discountVisaThree, discountVisaFour]
+//
+//        // maestro
+//        let discountOneMaestro = Discount(numberOfInstallments: 1, amount: 500, discountedAmount: 490)
+//        let discountTwoMaestro = Discount(numberOfInstallments: 2, amount: 510, discountedAmount: 500)
+//        let discountThreeMaestro = Discount(numberOfInstallments: 3, amount: 515, discountedAmount: 505)
+//        let discountFourMaestro = Discount(numberOfInstallments: 4, amount: 520, discountedAmount: 510)
+//
+//        let installmentMockMaestro = CardConfiguration()
+//        installmentMockMaestro.cardName = "maestro"
+//        installmentMockMaestro.discounts = [discountOneMaestro, discountTwoMaestro, discountThreeMaestro, discountFourMaestro]
+//
+//        // master
+//        let discountOneMaster = Discount(numberOfInstallments: 1, amount: 1000, discountedAmount: 980)
+//        let discountTwoMaster = Discount(numberOfInstallments: 2, amount: 1020, discountedAmount: 990)
+//        let discountThreeMaster = Discount(numberOfInstallments: 3, amount: 1030, discountedAmount: 1000)
+//        let discountFourMaster = Discount(numberOfInstallments: 4, amount: 1050, discountedAmount: 1020)
+//
+//        let installmentMockMaster = CardConfiguration()
+//        installmentMockMaster.cardName = "master"
+//        installmentMockMaster.discounts = [discountOneMaster, discountTwoMaster, discountThreeMaster, discountFourMaster]
+//
+//        // jcb
+//        let discountOneJcb = Discount(numberOfInstallments: 1, amount: 700, discountedAmount: 680)
+//        let discountTwoJcb = Discount(numberOfInstallments: 2, amount: 710, discountedAmount: 690)
+//        let discountThreeJcb = Discount(numberOfInstallments: 3, amount: 720, discountedAmount: 700)
+//        let discountFourJcb = Discount(numberOfInstallments: 4, amount: 730, discountedAmount: 710)
+//
+//        let installmentMockJcb = CardConfiguration()
+//        installmentMockJcb.cardName = "jcb"
+//        installmentMockJcb.discounts = [discountOneJcb, discountTwoJcb, discountThreeJcb, discountFourJcb]
+//
+//        // amex
+//        let discountOneAmex = Discount(numberOfInstallments: 1, amount: 900, discountedAmount: 880)
+//        let discountTwoAmex = Discount(numberOfInstallments: 2, amount: 910, discountedAmount: 890)
+//        let discountThreeAmex = Discount(numberOfInstallments: 3, amount: 920, discountedAmount: 900)
+//        let discountFourAmex = Discount(numberOfInstallments: 4, amount: 930, discountedAmount: 910)
+//
+//        let installmentMockAmex = CardConfiguration()
+//        installmentMockAmex.cardName = "amex"
+//        installmentMockAmex.discounts = [discountOneAmex, discountTwoAmex, discountThreeAmex, discountFourAmex]
+//
+//        installmentMap.installments = [
+//            installmentMockDiners,
+//            installmentMockVisa,
+//            installmentMockMaestro,
+//            installmentMockMaster,
+//            installmentMockAmex,
+//            installmentMockJcb
+//        ]
+//
+//        return installmentMap
+//    }
 }
