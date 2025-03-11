@@ -33,17 +33,15 @@ class PaymentViewModel: ObservableObject {
     func proceedToPayment() {
         CorvusWallet.shopURL = "demoShop"
 
-        CorvusWallet.checkout(with: checkout, signature: signature) { [weak self] responseData, result in
+        CorvusWallet.checkout(with: checkout, signature: signature) { [weak self] orderNumber, result in
 
-            if let responseData {
-                print("response data: \n" + responseData)
-            }
+            let orderNumber = orderNumber ?? ""
 
             switch result {
             case .success:
-                self?.alert = PaymentAlertItem(text: "Order placed successfully", isError: false)
+                self?.alert = PaymentAlertItem(text: "Order \(orderNumber) placed succesfully", isError: false)
             case .checkoutError:
-                self?.alert = PaymentAlertItem(text: "Order not processed", isError: true)
+                self?.alert = PaymentAlertItem(text: "Order \(orderNumber) not processed", isError: true)
             case .networkError:
                 self?.alert = PaymentAlertItem(text: "Network connection error", isError: true)
             case .canceled:
