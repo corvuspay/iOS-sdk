@@ -1,6 +1,7 @@
 <p align="center">
-<img  src="https://www.corvuspay.com/wp-content/uploads/2019/10/CorvusPay-all-color@2x.png" alt="" /> 
+<img  src="https://github.com/user-attachments/assets/960bbe41-7f2a-483b-b649-31cf9ffe8f27" alt="" /> 
 </p>
+
 
 # **Content**
 - [Installation - Swift package manager](#Swift-package-manager)
