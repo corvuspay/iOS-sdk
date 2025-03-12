@@ -43,13 +43,14 @@ Set desired environment and logLevel
 
 ### Optional - If your app wants to open the CorvusWallet app
 1. Open your **Info.plist**
+
    1.1. Add **LSApplicationQueriesSchemes:corvuswallet**
 
         Adding this property to info.plist is required if your app wants to open the CorvusWallet app
    
    > 📚 **Tip:** If you are having trouble adding the property - Refer to the info.plist in our Demoshop. 
 
-2. Add **callback handling**
+3. Add **callback handling**
    > 🔍 Used for showing your users **status** of the processed transaction.
    
    > 📚 **Tip:** Refer to our Demoshop for examples of callback usage.
