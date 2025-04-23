@@ -1,7 +1,7 @@
 framework module CorvusWalletSDK {
   umbrella header "CorvusWalletSDK.h"
-
   export *
+
   module * { export * }
 }
 
