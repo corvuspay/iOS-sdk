@@ -89,7 +89,7 @@ extension InstallmentMap {
     var toString: String {
         var stringBuilder = "["
 
-        installments.forEach { cardConfiguration in
+        self.getInstallments().forEach { cardConfiguration in
             stringBuilder.append("CardConfiguration(")
             stringBuilder.append("cardType=\(cardConfiguration.cardName),")
             stringBuilder.append("discounts=[")

@@ -33,7 +33,7 @@ class PaymentViewModel: ObservableObject {
     func proceedToPayment() {
         CorvusWallet.shopURL = "demoShop"
 
-        CorvusWallet.checkout(with: checkout, signature: signature) { [weak self] orderNumber, result in
+        CorvusWallet.checkout(with: checkout, signature: signature) { [weak self] orderNumber, _, result in
 
             let orderNumber = orderNumber ?? ""
 
