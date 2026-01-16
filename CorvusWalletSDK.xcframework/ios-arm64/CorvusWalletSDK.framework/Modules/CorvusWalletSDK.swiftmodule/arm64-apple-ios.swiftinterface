@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CorvusWalletSDK
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CorvusWalletSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
 import CommonCrypto
 @_exported import CorvusWalletSDK
 import Foundation
@@ -10,6 +10,7 @@ import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @_inheritsConvenienceInitializers @objc public class CorvusWallet : ObjectiveC.NSObject {
   public static var shopURL: Swift.String?
   @objc public static let noValueInt64: Swift.Int64
@@ -20,7 +21,9 @@ import _StringProcessing
     @objc set
   }
   @objc public static var environment: CorvusWalletSDK.Environment
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func checkout(with checkout: CorvusWalletSDK.Checkout, signature: Swift.String, completion: ((Swift.String?, CorvusWalletSDK.CheckoutResult) -> Swift.Void)? = nil)
+  #endif
   @objc public static func handleWalletAppCallback(url: Foundation.URL) -> Swift.Bool
   @objc public static func createSignatureString(for checkout: CorvusWalletSDK.Checkout) -> Swift.String
   @objc override dynamic public init()
@@ -46,11 +49,9 @@ extension CorvusWalletSDK.CorvusWallet {
   @objc public var cardHolder: CorvusWalletSDK.Cardholder?
   @objc public var installmentsMap: CorvusWalletSDK.InstallmentMap?
   @objc public var completion: ((Swift.String?, CorvusWalletSDK.CheckoutResult) -> Swift.Void)?
-  @objc public var useCardProfiles: Foundation.NSNumber?
-  @objc public var userCardProfilesId: Swift.String?
-  @objc public var isSdk: Swift.Bool
-  @objc public var version: Swift.String
-  required public init(storeId: Swift.Int, orderNumber: Swift.String, language: CorvusWalletSDK.Language, cart: [CorvusWalletSDK.CartItem], currency: CorvusWalletSDK.Currency, amount: Swift.Double, requireComplete: Swift.Bool, bestBefore: Swift.Int64 = CorvusWallet.noValueInt64, discountAmount: Swift.Double = CorvusWallet.noValueDouble, cardHolder: CorvusWalletSDK.Cardholder? = nil, installments: CorvusWalletSDK.InstallmentsParams? = nil, installmentsMap: CorvusWalletSDK.InstallmentMap? = nil, useCardProfiles: Swift.Bool? = nil, userCardProfilesId: Swift.String? = nil, isSdk: Swift.Bool, version: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  required public init(storeId: Swift.Int, orderNumber: Swift.String, language: CorvusWalletSDK.Language, cart: [CorvusWalletSDK.CartItem], currency: CorvusWalletSDK.Currency, amount: Swift.Double, requireComplete: Swift.Bool, bestBefore: Swift.Int64, discountAmount: Swift.Double, installments: CorvusWalletSDK.InstallmentsParams?, installmentsMap: CorvusWalletSDK.InstallmentMap?)
+  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class InstallmentsParams : ObjectiveC.NSObject {
@@ -68,9 +69,6 @@ extension CorvusWalletSDK.Cardholder {
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
-  public var signatureString: Swift.String {
-    get
-  }
 }
 @objc @_hasMissingDesignatedInitializers public class InstallmentTuple : ObjectiveC.NSObject {
   @objc public var oneTime: Swift.Bool
@@ -81,10 +79,13 @@ extension CorvusWalletSDK.Cardholder {
 @objc public enum Language : Swift.UInt {
   case en
   case hr
+  case ba
   public var description: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.UInt)
+  #endif
   public typealias RawValue = Swift.UInt
   public var rawValue: Swift.UInt {
     get
@@ -106,7 +107,10 @@ extension CorvusWalletSDK.Cardholder {
   case gbp
   case usd
   case pln
+  case bam
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.UInt)
+  #endif
   public typealias RawValue = Swift.UInt
   public var rawValue: Swift.UInt {
     get
@@ -147,7 +151,7 @@ extension CorvusWalletSDK.Cardholder {
   @objc override dynamic public init()
   @objc deinit
 }
-@objc public class Cardholder : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc public class Cardholder : ObjectiveC.NSObject {
   @objc public var firstName: Swift.String?
   @objc public var lastName: Swift.String?
   @objc public var address: Swift.String?
@@ -157,7 +161,7 @@ extension CorvusWalletSDK.Cardholder {
   @objc public var countryCode: Swift.String?
   @objc public var email: Swift.String?
   @objc public var phone: Swift.String?
-  required public init(firstName: Swift.String? = nil, lastName: Swift.String? = nil, address: Swift.String? = nil, city: Swift.String? = nil, zip: Swift.String? = nil, country: Swift.String? = nil, countryCode: Swift.String? = nil, email: Swift.String? = nil, phone: Swift.String? = nil)
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc public enum CardType : Swift.UInt {
@@ -173,7 +177,9 @@ extension CorvusWalletSDK.Cardholder {
   public var description: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.UInt)
+  #endif
   public typealias RawValue = Swift.UInt
   public var rawValue: Swift.UInt {
     get
@@ -185,7 +191,9 @@ extension CorvusWalletSDK.Cardholder {
   case networkError
   case checkoutError
   case validationFailed
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.UInt)
+  #endif
   public typealias RawValue = Swift.UInt
   public var rawValue: Swift.UInt {
     get
@@ -196,14 +204,18 @@ public enum CorvusSdkError : Foundation.LocalizedError {
   case emptyCart(message: Swift.String)
   case emptySignature(message: Swift.String)
   case mulitpleInstallmentsParamsPresent(message: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   public var description: Swift.String? {
     get
   }
+  #endif
 }
 @objc public enum Environment : Swift.Int {
   case test
   case production
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -214,7 +226,9 @@ public enum CorvusSdkError : Foundation.LocalizedError {
 }
 @_inheritsConvenienceInitializers @objc public class InstallmentsMapBuilder : ObjectiveC.NSObject {
   @objc public func create(withCard cardType: CorvusWalletSDK.CardType, withDiscounts discounts: [CorvusWalletSDK.Discount]) -> CorvusWalletSDK.InstallmentsMapBuilder
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func build() -> CorvusWalletSDK.InstallmentMap?
+  #endif
   @objc override dynamic public init()
   @objc deinit
 }
@@ -222,13 +236,21 @@ public enum CorvusSdkError : Foundation.LocalizedError {
   public var installments: [CorvusWalletSDK.CardConfiguration]
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case installments
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(stringValue: Swift.String)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(intValue: Swift.Int)
+    #endif
     public typealias RawValue = Swift.String
+    #if compiler(>=5.3) && $NonescapableTypes
     public var intValue: Swift.Int? {
       get
     }
+    #endif
     public var rawValue: Swift.String {
       get
     }
@@ -249,13 +271,21 @@ public enum CorvusSdkError : Foundation.LocalizedError {
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case cardName
     case discounts
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(stringValue: Swift.String)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(intValue: Swift.Int)
+    #endif
     public typealias RawValue = Swift.String
+    #if compiler(>=5.3) && $NonescapableTypes
     public var intValue: Swift.Int? {
       get
     }
+    #endif
     public var rawValue: Swift.String {
       get
     }
@@ -275,13 +305,21 @@ public enum CorvusSdkError : Foundation.LocalizedError {
     case numberOfInstallments
     case amount
     case discountedAmount
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(stringValue: Swift.String)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(intValue: Swift.Int)
+    #endif
     public typealias RawValue = Swift.String
+    #if compiler(>=5.3) && $NonescapableTypes
     public var intValue: Swift.Int? {
       get
     }
+    #endif
     public var rawValue: Swift.String {
       get
     }
@@ -305,7 +343,9 @@ public enum CorvusSdkError : Foundation.LocalizedError {
   case error
   case info
   case debug
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.UInt)
+  #endif
   public typealias RawValue = Swift.UInt
   public var rawValue: Swift.UInt {
     get
