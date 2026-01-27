@@ -13096,6 +13096,13 @@
       "value": "\"%02hhx\""
     },
     {
+      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "kind": "StringLiteral",
+      "offset": 1310,
+      "length": 5,
+      "value": "\"1.6\""
+    },
+    {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/CorvusWallet.swift",
       "kind": "StringLiteral",
       "offset": 495,
@@ -13994,21 +14001,21 @@
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Extensions\/String.swift",
       "kind": "StringLiteral",
-      "offset": 172,
+      "offset": 173,
       "length": 6,
       "value": "\"%.2f\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Extensions\/String.swift",
       "kind": "StringLiteral",
-      "offset": 202,
+      "offset": 203,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Extensions\/String.swift",
       "kind": "StringLiteral",
-      "offset": 227,
+      "offset": 228,
       "length": 8,
       "value": "\"<null>\""
     },
