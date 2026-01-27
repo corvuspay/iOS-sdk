@@ -13049,42 +13049,49 @@
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
-      "offset": 982,
+      "offset": 975,
+      "length": 9,
+      "value": "\"version\""
+    },
+    {
+      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "kind": "StringLiteral",
+      "offset": 1017,
       "length": 17,
       "value": "\"callback_scheme\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
-      "offset": 1032,
+      "offset": 1067,
       "length": 17,
       "value": "\"checkout_result\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
-      "offset": 1084,
+      "offset": 1119,
       "length": 18,
       "value": "\"CFBundleURLTypes\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
-      "offset": 1136,
+      "offset": 1171,
       "length": 17,
       "value": "\"CFBundleURLName\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
-      "offset": 1190,
+      "offset": 1225,
       "length": 20,
       "value": "\"CFBundleURLSchemes\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
-      "offset": 1238,
+      "offset": 1273,
       "length": 8,
       "value": "\"%02hhx\""
     },
