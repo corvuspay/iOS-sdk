@@ -337,7 +337,8 @@ SWIFT_CLASS("_TtC15CorvusWalletSDK10Cardholder")
 @property (nonatomic, copy) NSString * _Nullable countryCode;
 @property (nonatomic, copy) NSString * _Nullable email;
 @property (nonatomic, copy) NSString * _Nullable phone;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @interface Cardholder (SWIFT_EXTENSION(CorvusWalletSDK))
@@ -357,12 +358,14 @@ enum Language : NSUInteger;
 @class InstallmentsParams;
 @class InstallmentMap;
 enum CheckoutResult : NSUInteger;
+@class NSNumber;
 SWIFT_CLASS("_TtC15CorvusWalletSDK8Checkout")
 @interface Checkout : NSObject
 @property (nonatomic) NSInteger storeId;
 @property (nonatomic, copy) NSString * _Nonnull orderNumber;
 @property (nonatomic) enum Language language;
-@property (nonatomic, copy) NSArray<CartItem *> * _Nonnull cart;
+@property (nonatomic, copy) NSArray<CartItem *> * _Nullable cart;
+@property (nonatomic, copy) NSString * _Nullable cartS;
 @property (nonatomic, strong) Currency * _Nonnull currency;
 @property (nonatomic) double amount;
 @property (nonatomic) BOOL requireComplete;
@@ -375,6 +378,16 @@ SWIFT_CLASS("_TtC15CorvusWalletSDK8Checkout")
 @property (nonatomic, strong) Cardholder * _Nullable cardHolder;
 @property (nonatomic, strong) InstallmentMap * _Nullable installmentsMap;
 @property (nonatomic, copy) void (^ _Nullable completion)(NSString * _Nullable, enum CheckoutResult);
+@property (nonatomic, strong) NSNumber * _Nullable useCardProfiles;
+@property (nonatomic, copy) NSString * _Nullable userCardProfilesId;
+@property (nonatomic) BOOL isSdk;
+@property (nonatomic, copy) NSString * _Nonnull version;
+@property (nonatomic) double voucherAmount;
+@property (nonatomic, copy) NSString * _Nullable creditorReference;
+@property (nonatomic, copy) NSString * _Nullable debtorIban;
+@property (nonatomic, copy) NSString * _Nullable shopAccountId;
+@property (nonatomic, copy) NSString * _Nullable hideTabs;
+@property (nonatomic, copy) NSString * _Nullable hideTab;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -417,7 +430,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) enum Environment environment;)
 ///
 /// \param amount number of items - Required
 ///
-/// \param requireComplete ignored? // TODO remove - Required
+/// \param requireComplete Required
 ///
 /// \param version CWSDKPayVersion - Required
 ///
@@ -441,7 +454,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) enum Environment environment;)
 ///
 /// \param completion completion block that gets called when checkout if finished. Contains order number and CWSDKCheckoutResult - Optional
 ///
-+ (void)checkoutWith:(Checkout * _Nonnull)checkout signature:(NSString * _Nonnull)signature completion:(void (^ _Nullable)(NSString * _Nullable, enum CheckoutResult))completion;
++ (void)checkoutWith:(Checkout * _Nonnull)checkout signature:(NSString * _Nonnull)signature completion:(void (^ _Nullable)(NSString * _Nullable, NSString * _Nullable, enum CheckoutResult))completion;
 + (BOOL)handleWalletAppCallbackWithUrl:(NSURL * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)createSignatureStringFor:(Checkout * _Nonnull)checkout SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -466,19 +479,19 @@ typedef SWIFT_ENUM(NSUInteger, CurrencyValue, open) {
   CurrencyValueHrk = 0,
   CurrencyValueEur = 1,
   CurrencyValueRsd = 2,
-  CurrencyValueAud = 3,
-  CurrencyValueCad = 4,
-  CurrencyValueCzk = 5,
-  CurrencyValueDkk = 6,
-  CurrencyValueHuf = 7,
-  CurrencyValueJpy = 8,
-  CurrencyValueNok = 9,
-  CurrencyValueSek = 10,
-  CurrencyValueChf = 11,
-  CurrencyValueGbp = 12,
-  CurrencyValueUsd = 13,
-  CurrencyValuePln = 14,
-  CurrencyValueBam = 15,
+  CurrencyValueBam = 3,
+  CurrencyValueAud = 4,
+  CurrencyValueCad = 5,
+  CurrencyValueCzk = 6,
+  CurrencyValueDkk = 7,
+  CurrencyValueHuf = 8,
+  CurrencyValueJpy = 9,
+  CurrencyValueNok = 10,
+  CurrencyValueSek = 11,
+  CurrencyValueChf = 12,
+  CurrencyValueGbp = 13,
+  CurrencyValueUsd = 14,
+  CurrencyValuePln = 15,
 };
 
 SWIFT_CLASS("_TtC15CorvusWalletSDK8Discount")
@@ -577,7 +590,9 @@ SWIFT_CLASS("_TtC15CorvusWalletSDK18InstallmentsParams")
 typedef SWIFT_ENUM(NSUInteger, Language, open) {
   LanguageEn = 0,
   LanguageHr = 1,
-  LanguageBa = 2,
+  LanguageRs = 2,
+  LanguageBa = 3,
+  LanguageSq = 4,
 };
 
 typedef SWIFT_ENUM(NSUInteger, LogLevel, open) {
@@ -934,7 +949,8 @@ SWIFT_CLASS("_TtC15CorvusWalletSDK10Cardholder")
 @property (nonatomic, copy) NSString * _Nullable countryCode;
 @property (nonatomic, copy) NSString * _Nullable email;
 @property (nonatomic, copy) NSString * _Nullable phone;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @interface Cardholder (SWIFT_EXTENSION(CorvusWalletSDK))
@@ -954,12 +970,14 @@ enum Language : NSUInteger;
 @class InstallmentsParams;
 @class InstallmentMap;
 enum CheckoutResult : NSUInteger;
+@class NSNumber;
 SWIFT_CLASS("_TtC15CorvusWalletSDK8Checkout")
 @interface Checkout : NSObject
 @property (nonatomic) NSInteger storeId;
 @property (nonatomic, copy) NSString * _Nonnull orderNumber;
 @property (nonatomic) enum Language language;
-@property (nonatomic, copy) NSArray<CartItem *> * _Nonnull cart;
+@property (nonatomic, copy) NSArray<CartItem *> * _Nullable cart;
+@property (nonatomic, copy) NSString * _Nullable cartS;
 @property (nonatomic, strong) Currency * _Nonnull currency;
 @property (nonatomic) double amount;
 @property (nonatomic) BOOL requireComplete;
@@ -972,6 +990,16 @@ SWIFT_CLASS("_TtC15CorvusWalletSDK8Checkout")
 @property (nonatomic, strong) Cardholder * _Nullable cardHolder;
 @property (nonatomic, strong) InstallmentMap * _Nullable installmentsMap;
 @property (nonatomic, copy) void (^ _Nullable completion)(NSString * _Nullable, enum CheckoutResult);
+@property (nonatomic, strong) NSNumber * _Nullable useCardProfiles;
+@property (nonatomic, copy) NSString * _Nullable userCardProfilesId;
+@property (nonatomic) BOOL isSdk;
+@property (nonatomic, copy) NSString * _Nonnull version;
+@property (nonatomic) double voucherAmount;
+@property (nonatomic, copy) NSString * _Nullable creditorReference;
+@property (nonatomic, copy) NSString * _Nullable debtorIban;
+@property (nonatomic, copy) NSString * _Nullable shopAccountId;
+@property (nonatomic, copy) NSString * _Nullable hideTabs;
+@property (nonatomic, copy) NSString * _Nullable hideTab;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1014,7 +1042,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) enum Environment environment;)
 ///
 /// \param amount number of items - Required
 ///
-/// \param requireComplete ignored? // TODO remove - Required
+/// \param requireComplete Required
 ///
 /// \param version CWSDKPayVersion - Required
 ///
@@ -1038,7 +1066,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) enum Environment environment;)
 ///
 /// \param completion completion block that gets called when checkout if finished. Contains order number and CWSDKCheckoutResult - Optional
 ///
-+ (void)checkoutWith:(Checkout * _Nonnull)checkout signature:(NSString * _Nonnull)signature completion:(void (^ _Nullable)(NSString * _Nullable, enum CheckoutResult))completion;
++ (void)checkoutWith:(Checkout * _Nonnull)checkout signature:(NSString * _Nonnull)signature completion:(void (^ _Nullable)(NSString * _Nullable, NSString * _Nullable, enum CheckoutResult))completion;
 + (BOOL)handleWalletAppCallbackWithUrl:(NSURL * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)createSignatureStringFor:(Checkout * _Nonnull)checkout SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -1063,19 +1091,19 @@ typedef SWIFT_ENUM(NSUInteger, CurrencyValue, open) {
   CurrencyValueHrk = 0,
   CurrencyValueEur = 1,
   CurrencyValueRsd = 2,
-  CurrencyValueAud = 3,
-  CurrencyValueCad = 4,
-  CurrencyValueCzk = 5,
-  CurrencyValueDkk = 6,
-  CurrencyValueHuf = 7,
-  CurrencyValueJpy = 8,
-  CurrencyValueNok = 9,
-  CurrencyValueSek = 10,
-  CurrencyValueChf = 11,
-  CurrencyValueGbp = 12,
-  CurrencyValueUsd = 13,
-  CurrencyValuePln = 14,
-  CurrencyValueBam = 15,
+  CurrencyValueBam = 3,
+  CurrencyValueAud = 4,
+  CurrencyValueCad = 5,
+  CurrencyValueCzk = 6,
+  CurrencyValueDkk = 7,
+  CurrencyValueHuf = 8,
+  CurrencyValueJpy = 9,
+  CurrencyValueNok = 10,
+  CurrencyValueSek = 11,
+  CurrencyValueChf = 12,
+  CurrencyValueGbp = 13,
+  CurrencyValueUsd = 14,
+  CurrencyValuePln = 15,
 };
 
 SWIFT_CLASS("_TtC15CorvusWalletSDK8Discount")
@@ -1174,7 +1202,9 @@ SWIFT_CLASS("_TtC15CorvusWalletSDK18InstallmentsParams")
 typedef SWIFT_ENUM(NSUInteger, Language, open) {
   LanguageEn = 0,
   LanguageHr = 1,
-  LanguageBa = 2,
+  LanguageRs = 2,
+  LanguageBa = 3,
+  LanguageSq = 4,
 };
 
 typedef SWIFT_ENUM(NSUInteger, LogLevel, open) {
