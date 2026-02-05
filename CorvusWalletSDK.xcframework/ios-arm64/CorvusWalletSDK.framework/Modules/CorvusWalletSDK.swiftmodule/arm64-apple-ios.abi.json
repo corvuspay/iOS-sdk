@@ -564,12 +564,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((Swift.String?, CorvusWalletSDK.CheckoutResult) -> ())?",
+                "printedName": "((Swift.String?, Swift.String?, CorvusWalletSDK.CheckoutResult) -> ())?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.String?, CorvusWalletSDK.CheckoutResult) -> ()",
+                    "printedName": "(Swift.String?, Swift.String?, CorvusWalletSDK.CheckoutResult) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -579,8 +579,22 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "(Swift.String?, CorvusWalletSDK.CheckoutResult)",
+                        "printedName": "(Swift.String?, Swift.String?, CorvusWalletSDK.CheckoutResult)",
                         "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
                           {
                             "kind": "TypeNominal",
                             "name": "Optional",
@@ -612,7 +626,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@CorvusWalletSDK@objc(cs)CorvusWallet(cm)checkoutWith:signature:completion:",
-            "mangledName": "$s15CorvusWalletSDK0aB0C8checkout4with9signature10completionyAA8CheckoutC_SSySSSg_AA0H6ResultOtcSgtFZ",
+            "mangledName": "$s15CorvusWalletSDK0aB0C8checkout4with9signature10completionyAA8CheckoutC_SSySSSg_AjA0H6ResultOtcSgtFZ",
             "moduleName": "CorvusWalletSDK",
             "static": true,
             "objc_name": "checkoutWith:signature:completion:",
@@ -1123,34 +1137,8 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[CorvusWalletSDK.CartItem]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CartItem",
-                    "printedName": "CorvusWalletSDK.CartItem",
-                    "usr": "c:@M@CorvusWalletSDK@objc(cs)CartItem"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(py)cart",
-            "mangledName": "$s15CorvusWalletSDK8CheckoutC4cartSayAA8CartItemCGvp",
-            "moduleName": "CorvusWalletSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
+                "name": "Optional",
+                "printedName": "[CorvusWalletSDK.CartItem]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -1167,9 +1155,52 @@
                     "usr": "s:Sa"
                   }
                 ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(py)cart",
+            "mangledName": "$s15CorvusWalletSDK8CheckoutC4cartSayAA8CartItemCGSgvp",
+            "moduleName": "CorvusWalletSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[CorvusWalletSDK.CartItem]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[CorvusWalletSDK.CartItem]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CartItem",
+                            "printedName": "CorvusWalletSDK.CartItem",
+                            "usr": "c:@M@CorvusWalletSDK@objc(cs)CartItem"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
                 "declKind": "Accessor",
                 "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(im)cart",
-                "mangledName": "$s15CorvusWalletSDK8CheckoutC4cartSayAA8CartItemCGvg",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC4cartSayAA8CartItemCGSgvg",
                 "moduleName": "CorvusWalletSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -1189,22 +1220,30 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[CorvusWalletSDK.CartItem]",
+                    "name": "Optional",
+                    "printedName": "[CorvusWalletSDK.CartItem]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "CartItem",
-                        "printedName": "CorvusWalletSDK.CartItem",
-                        "usr": "c:@M@CorvusWalletSDK@objc(cs)CartItem"
+                        "name": "Array",
+                        "printedName": "[CorvusWalletSDK.CartItem]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CartItem",
+                            "printedName": "CorvusWalletSDK.CartItem",
+                            "usr": "c:@M@CorvusWalletSDK@objc(cs)CartItem"
+                          }
+                        ],
+                        "usr": "s:Sa"
                       }
                     ],
-                    "usr": "s:Sa"
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(im)setCart:",
-                "mangledName": "$s15CorvusWalletSDK8CheckoutC4cartSayAA8CartItemCGvs",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC4cartSayAA8CartItemCGSgvs",
                 "moduleName": "CorvusWalletSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -1224,8 +1263,125 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15CorvusWalletSDK8CheckoutC4cartSayAA8CartItemCGvM",
-                "mangledName": "$s15CorvusWalletSDK8CheckoutC4cartSayAA8CartItemCGvM",
+                "usr": "s:15CorvusWalletSDK8CheckoutC4cartSayAA8CartItemCGSgvM",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC4cartSayAA8CartItemCGSgvM",
+                "moduleName": "CorvusWalletSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cartS",
+            "printedName": "cartS",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(py)cartS",
+            "mangledName": "$s15CorvusWalletSDK8CheckoutC5cartSSSSgvp",
+            "moduleName": "CorvusWalletSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(im)cartS",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC5cartSSSSgvg",
+                "moduleName": "CorvusWalletSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(im)setCartS:",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC5cartSSSSgvs",
+                "moduleName": "CorvusWalletSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15CorvusWalletSDK8CheckoutC5cartSSSSgvM",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC5cartSSSSgvM",
                 "moduleName": "CorvusWalletSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -2541,9 +2697,1104 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "useCardProfiles",
+            "printedName": "useCardProfiles",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(py)useCardProfiles",
+            "mangledName": "$s15CorvusWalletSDK8CheckoutC15useCardProfilesSo8NSNumberCSgvp",
+            "moduleName": "CorvusWalletSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(im)useCardProfiles",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC15useCardProfilesSo8NSNumberCSgvg",
+                "moduleName": "CorvusWalletSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(im)setUseCardProfiles:",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC15useCardProfilesSo8NSNumberCSgvs",
+                "moduleName": "CorvusWalletSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15CorvusWalletSDK8CheckoutC15useCardProfilesSo8NSNumberCSgvM",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC15useCardProfilesSo8NSNumberCSgvM",
+                "moduleName": "CorvusWalletSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "userCardProfilesId",
+            "printedName": "userCardProfilesId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(py)userCardProfilesId",
+            "mangledName": "$s15CorvusWalletSDK8CheckoutC18userCardProfilesIdSSSgvp",
+            "moduleName": "CorvusWalletSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(im)userCardProfilesId",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC18userCardProfilesIdSSSgvg",
+                "moduleName": "CorvusWalletSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(im)setUserCardProfilesId:",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC18userCardProfilesIdSSSgvs",
+                "moduleName": "CorvusWalletSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15CorvusWalletSDK8CheckoutC18userCardProfilesIdSSSgvM",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC18userCardProfilesIdSSSgvM",
+                "moduleName": "CorvusWalletSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isSdk",
+            "printedName": "isSdk",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(py)isSdk",
+            "mangledName": "$s15CorvusWalletSDK8CheckoutC5isSdkSbvp",
+            "moduleName": "CorvusWalletSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(im)isSdk",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC5isSdkSbvg",
+                "moduleName": "CorvusWalletSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(im)setIsSdk:",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC5isSdkSbvs",
+                "moduleName": "CorvusWalletSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15CorvusWalletSDK8CheckoutC5isSdkSbvM",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC5isSdkSbvM",
+                "moduleName": "CorvusWalletSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "version",
+            "printedName": "version",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(py)version",
+            "mangledName": "$s15CorvusWalletSDK8CheckoutC7versionSSvp",
+            "moduleName": "CorvusWalletSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(im)version",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC7versionSSvg",
+                "moduleName": "CorvusWalletSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(im)setVersion:",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC7versionSSvs",
+                "moduleName": "CorvusWalletSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15CorvusWalletSDK8CheckoutC7versionSSvM",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC7versionSSvM",
+                "moduleName": "CorvusWalletSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "voucherAmount",
+            "printedName": "voucherAmount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(py)voucherAmount",
+            "mangledName": "$s15CorvusWalletSDK8CheckoutC13voucherAmountSdvp",
+            "moduleName": "CorvusWalletSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(im)voucherAmount",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC13voucherAmountSdvg",
+                "moduleName": "CorvusWalletSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(im)setVoucherAmount:",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC13voucherAmountSdvs",
+                "moduleName": "CorvusWalletSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15CorvusWalletSDK8CheckoutC13voucherAmountSdvM",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC13voucherAmountSdvM",
+                "moduleName": "CorvusWalletSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "creditorReference",
+            "printedName": "creditorReference",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(py)creditorReference",
+            "mangledName": "$s15CorvusWalletSDK8CheckoutC17creditorReferenceSSSgvp",
+            "moduleName": "CorvusWalletSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(im)creditorReference",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC17creditorReferenceSSSgvg",
+                "moduleName": "CorvusWalletSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(im)setCreditorReference:",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC17creditorReferenceSSSgvs",
+                "moduleName": "CorvusWalletSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15CorvusWalletSDK8CheckoutC17creditorReferenceSSSgvM",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC17creditorReferenceSSSgvM",
+                "moduleName": "CorvusWalletSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "debtorIban",
+            "printedName": "debtorIban",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(py)debtorIban",
+            "mangledName": "$s15CorvusWalletSDK8CheckoutC10debtorIbanSSSgvp",
+            "moduleName": "CorvusWalletSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(im)debtorIban",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC10debtorIbanSSSgvg",
+                "moduleName": "CorvusWalletSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(im)setDebtorIban:",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC10debtorIbanSSSgvs",
+                "moduleName": "CorvusWalletSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15CorvusWalletSDK8CheckoutC10debtorIbanSSSgvM",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC10debtorIbanSSSgvM",
+                "moduleName": "CorvusWalletSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shopAccountId",
+            "printedName": "shopAccountId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(py)shopAccountId",
+            "mangledName": "$s15CorvusWalletSDK8CheckoutC13shopAccountIdSSSgvp",
+            "moduleName": "CorvusWalletSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(im)shopAccountId",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC13shopAccountIdSSSgvg",
+                "moduleName": "CorvusWalletSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(im)setShopAccountId:",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC13shopAccountIdSSSgvs",
+                "moduleName": "CorvusWalletSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15CorvusWalletSDK8CheckoutC13shopAccountIdSSSgvM",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC13shopAccountIdSSSgvM",
+                "moduleName": "CorvusWalletSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "hideTabs",
+            "printedName": "hideTabs",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(py)hideTabs",
+            "mangledName": "$s15CorvusWalletSDK8CheckoutC8hideTabsSSSgvp",
+            "moduleName": "CorvusWalletSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(im)hideTabs",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC8hideTabsSSSgvg",
+                "moduleName": "CorvusWalletSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(im)setHideTabs:",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC8hideTabsSSSgvs",
+                "moduleName": "CorvusWalletSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15CorvusWalletSDK8CheckoutC8hideTabsSSSgvM",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC8hideTabsSSSgvM",
+                "moduleName": "CorvusWalletSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "hideTab",
+            "printedName": "hideTab",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(py)hideTab",
+            "mangledName": "$s15CorvusWalletSDK8CheckoutC7hideTabSSSgvp",
+            "moduleName": "CorvusWalletSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(im)hideTab",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC7hideTabSSSgvg",
+                "moduleName": "CorvusWalletSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CorvusWalletSDK@objc(cs)Checkout(im)setHideTab:",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC7hideTabSSSgvs",
+                "moduleName": "CorvusWalletSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15CorvusWalletSDK8CheckoutC7hideTabSSSgvM",
+                "mangledName": "$s15CorvusWalletSDK8CheckoutC7hideTabSSSgvM",
+                "moduleName": "CorvusWalletSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(storeId:orderNumber:language:cart:currency:amount:requireComplete:bestBefore:discountAmount:installments:installmentsMap:)",
+            "printedName": "init(storeId:orderNumber:language:cart:cartS:currency:amount:requireComplete:bestBefore:discountAmount:cardHolder:installments:installmentsMap:useCardProfiles:userCardProfilesId:isSdk:version:voucherAmount:creditorReference:debtorIban:shopAccountId:hideTabs:hideTab:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2571,17 +3822,41 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[CorvusWalletSDK.CartItem]",
+                "name": "Optional",
+                "printedName": "[CorvusWalletSDK.CartItem]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "CartItem",
-                    "printedName": "CorvusWalletSDK.CartItem",
-                    "usr": "c:@M@CorvusWalletSDK@objc(cs)CartItem"
+                    "name": "Array",
+                    "printedName": "[CorvusWalletSDK.CartItem]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CartItem",
+                        "printedName": "CorvusWalletSDK.CartItem",
+                        "usr": "c:@M@CorvusWalletSDK@objc(cs)CartItem"
+                      }
+                    ],
+                    "usr": "s:Sa"
                   }
                 ],
-                "usr": "s:Sa"
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -2605,13 +3880,30 @@
                 "kind": "TypeNominal",
                 "name": "Int64",
                 "printedName": "Swift.Int64",
+                "hasDefaultArg": true,
                 "usr": "s:s5Int64V"
               },
               {
                 "kind": "TypeNominal",
                 "name": "Double",
                 "printedName": "Swift.Double",
+                "hasDefaultArg": true,
                 "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CorvusWalletSDK.Cardholder?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Cardholder",
+                    "printedName": "CorvusWalletSDK.Cardholder",
+                    "usr": "c:@M@CorvusWalletSDK@objc(cs)Cardholder"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -2625,6 +3917,7 @@
                     "usr": "c:@M@CorvusWalletSDK@objc(cs)InstallmentsParams"
                   }
                 ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               },
               {
@@ -2639,12 +3932,137 @@
                     "usr": "c:@M@CorvusWalletSDK@objc(cs)InstallmentMap"
                   }
                 ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:15CorvusWalletSDK8CheckoutC7storeId11orderNumber8language4cart8currency6amount15requireComplete10bestBefore14discountAmount12installments0S3MapACSi_SSAA8LanguageOSayAA8CartItemCGAA8CurrencyCSdSbs5Int64VSdAA18InstallmentsParamsCSgAA011InstallmentT0CSgtcfc",
-            "mangledName": "$s15CorvusWalletSDK8CheckoutC7storeId11orderNumber8language4cart8currency6amount15requireComplete10bestBefore14discountAmount12installments0S3MapACSi_SSAA8LanguageOSayAA8CartItemCGAA8CurrencyCSdSbs5Int64VSdAA18InstallmentsParamsCSgAA011InstallmentT0CSgtcfc",
+            "usr": "s:15CorvusWalletSDK8CheckoutC7storeId11orderNumber8language4cart0J1S8currency6amount15requireComplete10bestBefore14discountAmount10cardHolder12installments0U3Map15useCardProfiles04userxyF05isSdk7version07voucherR017creditorReference10debtorIban011shopAccountF08hideTabs7hideTabACSi_SSAA8LanguageOSayAA8CartItemCGSgSSSgAA8CurrencyCSdSbs5Int64VSdAA10CardholderCSgAA18InstallmentsParamsCSgAA011InstallmentV0CSgSbSgA5_SbSSSdA5_A5_A5_A5_A5_tcfc",
+            "mangledName": "$s15CorvusWalletSDK8CheckoutC7storeId11orderNumber8language4cart0J1S8currency6amount15requireComplete10bestBefore14discountAmount10cardHolder12installments0U3Map15useCardProfiles04userxyF05isSdk7version07voucherR017creditorReference10debtorIban011shopAccountF08hideTabs7hideTabACSi_SSAA8LanguageOSayAA8CartItemCGSgSSSgAA8CurrencyCSdSbs5Int64VSdAA10CardholderCSgAA18InstallmentsParamsCSgAA011InstallmentV0CSgSbSgA5_SbSSSdA5_A5_A5_A5_A5_tcfc",
             "moduleName": "CorvusWalletSDK",
             "declAttributes": [
               "Required",
@@ -3791,6 +5209,47 @@
           },
           {
             "kind": "Var",
+            "name": "rs",
+            "printedName": "rs",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CorvusWalletSDK.Language.Type) -> CorvusWalletSDK.Language",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Language",
+                    "printedName": "CorvusWalletSDK.Language",
+                    "usr": "c:@M@CorvusWalletSDK@E@Language"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CorvusWalletSDK.Language.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Language",
+                        "printedName": "CorvusWalletSDK.Language",
+                        "usr": "c:@M@CorvusWalletSDK@E@Language"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@CorvusWalletSDK@E@Language@LanguageRs",
+            "mangledName": "$s15CorvusWalletSDK8LanguageO2rsyA2CmF",
+            "moduleName": "CorvusWalletSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
             "name": "ba",
             "printedName": "ba",
             "children": [
@@ -3828,7 +5287,48 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 2
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "sq",
+            "printedName": "sq",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CorvusWalletSDK.Language.Type) -> CorvusWalletSDK.Language",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Language",
+                    "printedName": "CorvusWalletSDK.Language",
+                    "usr": "c:@M@CorvusWalletSDK@E@Language"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CorvusWalletSDK.Language.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Language",
+                        "printedName": "CorvusWalletSDK.Language",
+                        "usr": "c:@M@CorvusWalletSDK@E@Language"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@CorvusWalletSDK@E@Language@LanguageSq",
+            "mangledName": "$s15CorvusWalletSDK8LanguageO2sqyA2CmF",
+            "moduleName": "CorvusWalletSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
           },
           {
             "kind": "Var",
@@ -4135,6 +5635,47 @@
           },
           {
             "kind": "Var",
+            "name": "bam",
+            "printedName": "bam",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CorvusWalletSDK.CurrencyValue.Type) -> CorvusWalletSDK.CurrencyValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CurrencyValue",
+                    "printedName": "CorvusWalletSDK.CurrencyValue",
+                    "usr": "c:@M@CorvusWalletSDK@E@CurrencyValue"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CorvusWalletSDK.CurrencyValue.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CurrencyValue",
+                        "printedName": "CorvusWalletSDK.CurrencyValue",
+                        "usr": "c:@M@CorvusWalletSDK@E@CurrencyValue"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@CorvusWalletSDK@E@CurrencyValue@CurrencyValueBam",
+            "mangledName": "$s15CorvusWalletSDK13CurrencyValueO3bamyA2CmF",
+            "moduleName": "CorvusWalletSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
             "name": "aud",
             "printedName": "aud",
             "children": [
@@ -4172,7 +5713,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 3
+            "fixedbinaryorder": 4
           },
           {
             "kind": "Var",
@@ -4213,7 +5754,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 4
+            "fixedbinaryorder": 5
           },
           {
             "kind": "Var",
@@ -4254,7 +5795,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 5
+            "fixedbinaryorder": 6
           },
           {
             "kind": "Var",
@@ -4295,7 +5836,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 6
+            "fixedbinaryorder": 7
           },
           {
             "kind": "Var",
@@ -4336,7 +5877,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 7
+            "fixedbinaryorder": 8
           },
           {
             "kind": "Var",
@@ -4377,7 +5918,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 8
+            "fixedbinaryorder": 9
           },
           {
             "kind": "Var",
@@ -4418,7 +5959,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 9
+            "fixedbinaryorder": 10
           },
           {
             "kind": "Var",
@@ -4459,7 +6000,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 10
+            "fixedbinaryorder": 11
           },
           {
             "kind": "Var",
@@ -4500,7 +6041,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 11
+            "fixedbinaryorder": 12
           },
           {
             "kind": "Var",
@@ -4541,7 +6082,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 12
+            "fixedbinaryorder": 13
           },
           {
             "kind": "Var",
@@ -4582,7 +6123,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 13
+            "fixedbinaryorder": 14
           },
           {
             "kind": "Var",
@@ -4619,47 +6160,6 @@
             "declKind": "EnumElement",
             "usr": "c:@M@CorvusWalletSDK@E@CurrencyValue@CurrencyValuePln",
             "mangledName": "$s15CorvusWalletSDK13CurrencyValueO3plnyA2CmF",
-            "moduleName": "CorvusWalletSDK",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 14
-          },
-          {
-            "kind": "Var",
-            "name": "bam",
-            "printedName": "bam",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(CorvusWalletSDK.CurrencyValue.Type) -> CorvusWalletSDK.CurrencyValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CurrencyValue",
-                    "printedName": "CorvusWalletSDK.CurrencyValue",
-                    "usr": "c:@M@CorvusWalletSDK@E@CurrencyValue"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "CorvusWalletSDK.CurrencyValue.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CurrencyValue",
-                        "printedName": "CorvusWalletSDK.CurrencyValue",
-                        "usr": "c:@M@CorvusWalletSDK@E@CurrencyValue"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@CorvusWalletSDK@E@CurrencyValue@CurrencyValueBam",
-            "mangledName": "$s15CorvusWalletSDK13CurrencyValueO3bamyA2CmF",
             "moduleName": "CorvusWalletSDK",
             "declAttributes": [
               "ObjC"
@@ -7637,6 +9137,163 @@
           {
             "kind": "Constructor",
             "name": "init",
+            "printedName": "init(firstName:lastName:address:city:zip:country:countryCode:email:phone:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Cardholder",
+                "printedName": "CorvusWalletSDK.Cardholder",
+                "usr": "c:@M@CorvusWalletSDK@objc(cs)Cardholder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15CorvusWalletSDK10CardholderC9firstName04lastF07address4city3zip7country0K4Code5email5phoneACSSSg_A8Mtcfc",
+            "mangledName": "$s15CorvusWalletSDK10CardholderC9firstName04lastF07address4city3zip7country0K4Code5email5phoneACSSSg_A8Mtcfc",
+            "moduleName": "CorvusWalletSDK",
+            "declAttributes": [
+              "Required",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
             "printedName": "init()",
             "children": [
               {
@@ -7712,6 +9369,49 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "signatureString",
+            "printedName": "signatureString",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15CorvusWalletSDK10CardholderC15signatureStringSSvp",
+            "mangledName": "$s15CorvusWalletSDK10CardholderC15signatureStringSSvp",
+            "moduleName": "CorvusWalletSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15CorvusWalletSDK10CardholderC15signatureStringSSvg",
+                "mangledName": "$s15CorvusWalletSDK10CardholderC15signatureStringSSvg",
+                "moduleName": "CorvusWalletSDK",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Class",
@@ -7724,7 +9424,6 @@
           "RawDocComment"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
         ],
@@ -9550,116 +11249,6 @@
         "printedName": "InstallmentMap",
         "children": [
           {
-            "kind": "Var",
-            "name": "installments",
-            "printedName": "installments",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[CorvusWalletSDK.CardConfiguration]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CardConfiguration",
-                    "printedName": "CorvusWalletSDK.CardConfiguration",
-                    "usr": "c:@M@CorvusWalletSDK@objc(cs)CardConfiguration"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15CorvusWalletSDK14InstallmentMapC12installmentsSayAA17CardConfigurationCGvp",
-            "mangledName": "$s15CorvusWalletSDK14InstallmentMapC12installmentsSayAA17CardConfigurationCGvp",
-            "moduleName": "CorvusWalletSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[CorvusWalletSDK.CardConfiguration]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CardConfiguration",
-                        "printedName": "CorvusWalletSDK.CardConfiguration",
-                        "usr": "c:@M@CorvusWalletSDK@objc(cs)CardConfiguration"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15CorvusWalletSDK14InstallmentMapC12installmentsSayAA17CardConfigurationCGvg",
-                "mangledName": "$s15CorvusWalletSDK14InstallmentMapC12installmentsSayAA17CardConfigurationCGvg",
-                "moduleName": "CorvusWalletSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[CorvusWalletSDK.CardConfiguration]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CardConfiguration",
-                        "printedName": "CorvusWalletSDK.CardConfiguration",
-                        "usr": "c:@M@CorvusWalletSDK@objc(cs)CardConfiguration"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15CorvusWalletSDK14InstallmentMapC12installmentsSayAA17CardConfigurationCGvs",
-                "mangledName": "$s15CorvusWalletSDK14InstallmentMapC12installmentsSayAA17CardConfigurationCGvs",
-                "moduleName": "CorvusWalletSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15CorvusWalletSDK14InstallmentMapC12installmentsSayAA17CardConfigurationCGvM",
-                "mangledName": "$s15CorvusWalletSDK14InstallmentMapC12installmentsSayAA17CardConfigurationCGvM",
-                "moduleName": "CorvusWalletSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
             "kind": "TypeDecl",
             "name": "CodingKeys",
             "printedName": "CodingKeys",
@@ -10029,6 +11618,69 @@
                 "mangledName": "$ss16SendableMetatypeP"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "setInstallments",
+            "printedName": "setInstallments(installments:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CorvusWalletSDK.CardConfiguration]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardConfiguration",
+                    "printedName": "CorvusWalletSDK.CardConfiguration",
+                    "usr": "c:@M@CorvusWalletSDK@objc(cs)CardConfiguration"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15CorvusWalletSDK14InstallmentMapC15setInstallments12installmentsySayAA17CardConfigurationCG_tF",
+            "mangledName": "$s15CorvusWalletSDK14InstallmentMapC15setInstallments12installmentsySayAA17CardConfigurationCG_tF",
+            "moduleName": "CorvusWalletSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getInstallments",
+            "printedName": "getInstallments()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CorvusWalletSDK.CardConfiguration]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardConfiguration",
+                    "printedName": "CorvusWalletSDK.CardConfiguration",
+                    "usr": "c:@M@CorvusWalletSDK@objc(cs)CardConfiguration"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15CorvusWalletSDK14InstallmentMapC15getInstallmentsSayAA17CardConfigurationCGyF",
+            "mangledName": "$s15CorvusWalletSDK14InstallmentMapC15getInstallmentsSayAA17CardConfigurationCGyF",
+            "moduleName": "CorvusWalletSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Constructor",
@@ -13098,9 +14750,58 @@
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
-      "offset": 1310,
-      "length": 5,
-      "value": "\"1.6\""
+      "offset": 1318,
+      "length": 23,
+      "value": "\"user_card_profiles_id\""
+    },
+    {
+      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "kind": "StringLiteral",
+      "offset": 1375,
+      "length": 19,
+      "value": "\"use_card_profiles\""
+    },
+    {
+      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "kind": "StringLiteral",
+      "offset": 1426,
+      "length": 16,
+      "value": "\"voucher_amount\""
+    },
+    {
+      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "kind": "StringLiteral",
+      "offset": 1478,
+      "length": 20,
+      "value": "\"creditor_reference\""
+    },
+    {
+      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "kind": "StringLiteral",
+      "offset": 1527,
+      "length": 13,
+      "value": "\"debtor_iban\""
+    },
+    {
+      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "kind": "StringLiteral",
+      "offset": 1572,
+      "length": 17,
+      "value": "\"shop_account_id\""
+    },
+    {
+      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "kind": "StringLiteral",
+      "offset": 1616,
+      "length": 11,
+      "value": "\"hide_tabs\""
+    },
+    {
+      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "kind": "StringLiteral",
+      "offset": 1653,
+      "length": 10,
+      "value": "\"hide_tab\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/CorvusWallet.swift",
@@ -13112,7 +14813,7 @@
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Checkout.swift",
       "kind": "BooleanLiteral",
-      "offset": 843,
+      "offset": 884,
       "length": 5,
       "value": "false"
     },
@@ -13182,140 +14883,140 @@
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
-      "offset": 1894,
+      "offset": 1808,
       "length": 5,
       "value": "\"{\r\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
-      "offset": 1914,
+      "offset": 1828,
       "length": 40,
       "value": "\"\t\tfirstName: \""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
-      "offset": 1951,
+      "offset": 1865,
       "length": 1,
       "value": "\"\r\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
-      "offset": 1969,
+      "offset": 1883,
       "length": 38,
       "value": "\"\t\tlastName: \""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
-      "offset": 2004,
+      "offset": 1918,
       "length": 1,
       "value": "\"\r\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
-      "offset": 2022,
+      "offset": 1936,
       "length": 36,
       "value": "\"\t\taddress: \""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
-      "offset": 2055,
+      "offset": 1969,
       "length": 1,
       "value": "\"\r\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
-      "offset": 2073,
+      "offset": 1987,
       "length": 30,
       "value": "\"\t\tcity: \""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
-      "offset": 2100,
+      "offset": 2014,
       "length": 1,
       "value": "\"\r\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
-      "offset": 2118,
+      "offset": 2032,
       "length": 28,
       "value": "\"\t\tzip: \""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
-      "offset": 2143,
+      "offset": 2057,
       "length": 1,
       "value": "\"\r\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
-      "offset": 2161,
+      "offset": 2075,
       "length": 36,
       "value": "\"\t\tcountry: \""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
-      "offset": 2194,
+      "offset": 2108,
       "length": 1,
       "value": "\"\r\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
-      "offset": 2212,
+      "offset": 2126,
       "length": 44,
       "value": "\"\t\tcountryCode: \""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
-      "offset": 2253,
+      "offset": 2167,
       "length": 1,
       "value": "\"\r\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
-      "offset": 2271,
+      "offset": 2185,
       "length": 32,
       "value": "\"\t\temail: \""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
-      "offset": 2300,
+      "offset": 2214,
       "length": 1,
       "value": "\"\r\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
-      "offset": 2318,
+      "offset": 2232,
       "length": 32,
       "value": "\"\t\tphone: \""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
-      "offset": 2347,
+      "offset": 2261,
       "length": 1,
       "value": "\"\r\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
-      "offset": 2365,
+      "offset": 2279,
       "length": 3,
       "value": "\"}\""
     },
@@ -13338,21 +15039,49 @@
       "kind": "StringLiteral",
       "offset": 218,
       "length": 4,
+      "value": "\"rs\""
+    },
+    {
+      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/Language.swift",
+      "kind": "StringLiteral",
+      "offset": 243,
+      "length": 4,
       "value": "\"ba\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/Language.swift",
+      "kind": "StringLiteral",
+      "offset": 268,
+      "length": 4,
+      "value": "\"sq\""
+    },
+    {
+      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/Language.swift",
       "kind": "IntegerLiteral",
-      "offset": 284,
+      "offset": 334,
       "length": 2,
       "value": "1"
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/Language.swift",
       "kind": "IntegerLiteral",
-      "offset": 296,
+      "offset": 346,
       "length": 2,
       "value": "2"
+    },
+    {
+      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/Language.swift",
+      "kind": "IntegerLiteral",
+      "offset": 358,
+      "length": 2,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/Language.swift",
+      "kind": "IntegerLiteral",
+      "offset": 370,
+      "length": 2,
+      "value": "4"
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
@@ -13380,91 +15109,91 @@
       "kind": "StringLiteral",
       "offset": 260,
       "length": 5,
-      "value": "\"AUD\""
+      "value": "\"BAM\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 287,
       "length": 5,
-      "value": "\"CAD\""
+      "value": "\"AUD\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 314,
       "length": 5,
-      "value": "\"CZK\""
+      "value": "\"CAD\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 341,
       "length": 5,
-      "value": "\"DKK\""
+      "value": "\"CZK\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 368,
       "length": 5,
-      "value": "\"HUF\""
+      "value": "\"DKK\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 395,
       "length": 5,
-      "value": "\"JPY\""
+      "value": "\"HUF\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 422,
       "length": 5,
-      "value": "\"NOK\""
+      "value": "\"JPY\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 449,
       "length": 5,
-      "value": "\"SEK\""
+      "value": "\"NOK\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 476,
       "length": 5,
-      "value": "\"CHF\""
+      "value": "\"SEK\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 503,
       "length": 5,
-      "value": "\"GBP\""
+      "value": "\"CHF\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 530,
       "length": 5,
-      "value": "\"USD\""
+      "value": "\"GBP\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 557,
       "length": 5,
-      "value": "\"PLN\""
+      "value": "\"USD\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 584,
       "length": 5,
-      "value": "\"BAM\""
+      "value": "\"PLN\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
@@ -13492,49 +15221,49 @@
       "kind": "StringLiteral",
       "offset": 712,
       "length": 4,
-      "value": "\"A$\""
+      "value": "\"KM\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 740,
       "length": 4,
-      "value": "\"C$\""
+      "value": "\"A$\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 768,
+      "length": 4,
+      "value": "\"C$\""
+    },
+    {
+      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "kind": "StringLiteral",
+      "offset": 796,
       "length": 5,
       "value": "\"Kč\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
-      "offset": 797,
+      "offset": 825,
       "length": 5,
       "value": "\"Kr.\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
-      "offset": 826,
+      "offset": 854,
       "length": 4,
       "value": "\"Ft\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
-      "offset": 854,
-      "length": 4,
-      "value": "\"¥\""
-    },
-    {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
-      "kind": "StringLiteral",
       "offset": 882,
       "length": 4,
-      "value": "\"kr\""
+      "value": "\"¥\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
@@ -13547,36 +15276,36 @@
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 938,
+      "length": 4,
+      "value": "\"kr\""
+    },
+    {
+      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "kind": "StringLiteral",
+      "offset": 966,
       "length": 5,
       "value": "\"CHf\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
-      "offset": 967,
+      "offset": 995,
       "length": 4,
       "value": "\"£\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
-      "offset": 995,
+      "offset": 1023,
       "length": 5,
       "value": "\"US$\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
-      "offset": 1024,
+      "offset": 1052,
       "length": 5,
       "value": "\"zł\""
-    },
-    {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
-      "kind": "StringLiteral",
-      "offset": 1053,
-      "length": 4,
-      "value": "\"KM\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
@@ -14099,56 +15828,56 @@
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/UI\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 386,
+      "offset": 425,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/InstallmentsMapBuilder.swift",
       "kind": "Array",
-      "offset": 1067,
+      "offset": 1084,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/InstallmentsMapBuilder.swift",
       "kind": "StringLiteral",
-      "offset": 2491,
+      "offset": 2931,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/InstallmentsMapBuilder.swift",
       "kind": "Array",
-      "offset": 2533,
+      "offset": 2973,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/InstallmentsMapBuilder.swift",
       "kind": "IntegerLiteral",
-      "offset": 3007,
+      "offset": 3447,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/InstallmentsMapBuilder.swift",
       "kind": "IntegerLiteral",
-      "offset": 3042,
+      "offset": 3482,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/InstallmentsMapBuilder.swift",
       "kind": "IntegerLiteral",
-      "offset": 3086,
+      "offset": 3526,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/InstallmentsMapBuilder.swift",
       "kind": "Array",
-      "offset": 3566,
+      "offset": 4006,
       "length": 2,
       "value": "[]"
     },
