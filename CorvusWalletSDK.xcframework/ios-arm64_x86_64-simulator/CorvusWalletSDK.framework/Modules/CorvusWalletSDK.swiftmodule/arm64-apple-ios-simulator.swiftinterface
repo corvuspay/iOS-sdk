@@ -391,13 +391,16 @@ public struct CorvusFrameStyle {
   public let fontFamily: Swift.String
   public let fontSize: Swift.Int
   public let fontColor: Swift.String
-  public init(backgroundColor: Swift.String, fontFamily: Swift.String, fontSize: Swift.Int, fontColor: Swift.String)
+  public let borderColor: Swift.String
+  public init(backgroundColor: Swift.String, fontFamily: Swift.String, fontSize: Swift.Int, fontColor: Swift.String, borderColor: Swift.String = "")
 }
 public struct CorvusFrameOption {
   public let showCvv: Swift.Bool
   public let hideCorvusPayLogo: Swift.Bool
   public let locale: Swift.String
-  public init(showCvv: Swift.Bool, hideCorvusPayLogo: Swift.Bool, locale: Swift.String)
+  public let layout: Swift.String
+  public let showLabels: Swift.Bool
+  public init(showCvv: Swift.Bool, hideCorvusPayLogo: Swift.Bool, locale: Swift.String, layout: Swift.String = "", showLabels: Swift.Bool = false)
 }
 public struct CardPaymentResult {
   public let paymentId: Swift.String
