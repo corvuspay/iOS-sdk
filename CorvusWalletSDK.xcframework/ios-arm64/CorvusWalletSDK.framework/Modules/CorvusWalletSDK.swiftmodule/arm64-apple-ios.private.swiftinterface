@@ -377,6 +377,89 @@ public enum CorvusSdkError : Foundation.LocalizedError {
   required public init(name: Swift.String, quantity: Swift.Int, image: UIKit.UIImage)
   @objc deinit
 }
+public struct CorvusFrameConfiguration {
+  public let publicKey: Swift.String
+  public let style: CorvusWalletSDK.CorvusFrameStyle
+  public let option: CorvusWalletSDK.CorvusFrameOption
+  public let sessionToken: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(publicKey: Swift.String, style: CorvusWalletSDK.CorvusFrameStyle, option: CorvusWalletSDK.CorvusFrameOption, sessionToken: Swift.String? = nil)
+  #endif
+}
+public struct CorvusFrameStyle {
+  public let backgroundColor: Swift.String
+  public let fontFamily: Swift.String
+  public let fontSize: Swift.Int
+  public let fontColor: Swift.String
+  public let borderColor: Swift.String
+  public init(backgroundColor: Swift.String, fontFamily: Swift.String, fontSize: Swift.Int, fontColor: Swift.String, borderColor: Swift.String = "")
+}
+public struct CorvusFrameOption {
+  public let showCvv: Swift.Bool
+  public let hideCorvusPayLogo: Swift.Bool
+  public let locale: Swift.String
+  public let layout: Swift.String
+  public let showLabels: Swift.Bool
+  public init(showCvv: Swift.Bool, hideCorvusPayLogo: Swift.Bool, locale: Swift.String, layout: Swift.String = "", showLabels: Swift.Bool = false)
+}
+public struct CardPaymentResult {
+  public let paymentId: Swift.String
+  public let status: Swift.String
+  public let errorCode: Swift.String
+  public let displayMessage: Swift.String
+  public let signature: Swift.String
+  public let approvalCode: Swift.String
+}
+public protocol CorvusFrameDelegate : AnyObject {
+  func onReady()
+  func onCardReady(isReady: Swift.Bool)
+  func onShowError(errorMsg: Swift.String)
+  func onClearError()
+  func onError(errorMsg: Swift.String)
+  func onShowModal(height: Swift.Int, width: Swift.Int)
+  func onHideModal(height: Swift.Int, width: Swift.Int)
+  func onInstallmentsCalculated(config: Swift.String)
+  func onCanDiscountedAmountBeUsed(canUse: Swift.Bool)
+  func onCardInfo(cardInfo: Swift.String)
+  func onCardPaymentResult(result: CorvusWalletSDK.CardPaymentResult)
+}
+extension CorvusWalletSDK.CorvusFrameDelegate {
+  public func onReady()
+  public func onCardReady(isReady: Swift.Bool)
+  public func onShowError(errorMsg: Swift.String)
+  public func onClearError()
+  public func onError(errorMsg: Swift.String)
+  public func onShowModal(height: Swift.Int, width: Swift.Int)
+  public func onHideModal(height: Swift.Int, width: Swift.Int)
+  public func onInstallmentsCalculated(config: Swift.String)
+  public func onCanDiscountedAmountBeUsed(canUse: Swift.Bool)
+  public func onCardInfo(cardInfo: Swift.String)
+  public func onCardPaymentResult(result: CorvusWalletSDK.CardPaymentResult)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class CorvusFrameView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CorvusWalletSDK.CorvusFrameDelegate)?
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
+  @objc deinit
+  @_Concurrency.MainActor @preconcurrency public func load(config: CorvusWalletSDK.CorvusFrameConfiguration)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @discardableResult
+  @_Concurrency.MainActor @preconcurrency public func finishPayment(paymentId: Swift.String) async -> Any?
+  #endif
+}
+extension CorvusWalletSDK.CorvusFrameView : WebKit.WKNavigationDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
+  #endif
+}
+extension CorvusWalletSDK.CorvusFrameView : WebKit.WKScriptMessageHandler {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+}
 extension CorvusWalletSDK.Language : Swift.Equatable {}
 extension CorvusWalletSDK.Language : Swift.Hashable {}
 extension CorvusWalletSDK.Language : Swift.RawRepresentable {}

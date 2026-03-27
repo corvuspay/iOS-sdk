@@ -281,8 +281,11 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreFoundation;
 @import Foundation;
 @import ObjectiveC;
+@import UIKit;
+@import WebKit;
 #endif
 
 #endif
@@ -399,6 +402,28 @@ typedef SWIFT_ENUM(NSUInteger, CheckoutResult, open) {
   CheckoutResultCheckoutError = 3,
   CheckoutResultValidationFailed = 4,
 };
+
+@class NSCoder;
+SWIFT_CLASS("_TtC15CorvusWalletSDK15CorvusFrameView")
+@interface CorvusFrameView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class WKUserContentController;
+@class WKScriptMessage;
+@interface CorvusFrameView (SWIFT_EXTENSION(CorvusWalletSDK)) <WKScriptMessageHandler>
+- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+@end
+
+@class WKWebView;
+@class NSURLAuthenticationChallenge;
+@class NSURLCredential;
+@class WKNavigation;
+@interface CorvusFrameView (SWIFT_EXTENSION(CorvusWalletSDK)) <WKNavigationDelegate>
+- (void)webView:(WKWebView * _Nonnull)webView didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge * _Nonnull)challenge completionHandler:(void (^ _Nonnull)(NSURLSessionAuthChallengeDisposition, NSURLCredential * _Nullable))completionHandler;
+- (void)webView:(WKWebView * _Nonnull)webView didFailProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
+@end
 
 enum LogLevel : NSUInteger;
 enum Environment : NSInteger;
@@ -893,8 +918,11 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreFoundation;
 @import Foundation;
 @import ObjectiveC;
+@import UIKit;
+@import WebKit;
 #endif
 
 #endif
@@ -1011,6 +1039,28 @@ typedef SWIFT_ENUM(NSUInteger, CheckoutResult, open) {
   CheckoutResultCheckoutError = 3,
   CheckoutResultValidationFailed = 4,
 };
+
+@class NSCoder;
+SWIFT_CLASS("_TtC15CorvusWalletSDK15CorvusFrameView")
+@interface CorvusFrameView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class WKUserContentController;
+@class WKScriptMessage;
+@interface CorvusFrameView (SWIFT_EXTENSION(CorvusWalletSDK)) <WKScriptMessageHandler>
+- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+@end
+
+@class WKWebView;
+@class NSURLAuthenticationChallenge;
+@class NSURLCredential;
+@class WKNavigation;
+@interface CorvusFrameView (SWIFT_EXTENSION(CorvusWalletSDK)) <WKNavigationDelegate>
+- (void)webView:(WKWebView * _Nonnull)webView didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge * _Nonnull)challenge completionHandler:(void (^ _Nonnull)(NSURLSessionAuthChallengeDisposition, NSURLCredential * _Nullable))completionHandler;
+- (void)webView:(WKWebView * _Nonnull)webView didFailProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
+@end
 
 enum LogLevel : NSUInteger;
 enum Environment : NSInteger;
