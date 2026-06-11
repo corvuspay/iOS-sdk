@@ -7,4 +7,5 @@ framework module CorvusWalletSDK {
 
 module CorvusWalletSDK.Swift {
   header "CorvusWalletSDK-Swift.h"
+  requires objc
 }

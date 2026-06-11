@@ -769,52 +769,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -825,10 +783,52 @@
           },
           {
             "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -4112,52 +4112,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -4168,10 +4126,52 @@
           },
           {
             "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -4660,52 +4660,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -4716,10 +4674,52 @@
           },
           {
             "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -5057,52 +5057,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -5113,10 +5071,52 @@
           },
           {
             "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -5462,17 +5462,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
             "name": "Escapable",
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -6258,17 +6258,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
             "name": "Escapable",
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -6465,52 +6465,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -6521,10 +6479,52 @@
           },
           {
             "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -7522,52 +7522,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -7578,10 +7536,52 @@
           },
           {
             "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -7983,52 +7983,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -8039,10 +7997,52 @@
           },
           {
             "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -9430,52 +9430,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -9486,10 +9444,52 @@
           },
           {
             "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -9999,17 +9999,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
             "name": "Escapable",
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -10345,17 +10345,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
             "name": "Escapable",
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -10698,24 +10698,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "LocalizedError",
-            "printedName": "LocalizedError",
-            "usr": "s:10Foundation14LocalizedErrorP",
-            "mangledName": "$s10Foundation14LocalizedErrorP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Error",
-            "printedName": "Error",
-            "usr": "s:s5ErrorP",
-            "mangledName": "$ss5ErrorP"
           },
           {
             "kind": "Conformance",
@@ -10726,17 +10712,24 @@
           },
           {
             "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -10937,17 +10930,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
             "name": "Escapable",
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -11180,52 +11173,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -11236,10 +11187,52 @@
           },
           {
             "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -11534,13 +11527,6 @@
             "conformances": [
               {
                 "kind": "Conformance",
-                "name": "CodingKey",
-                "printedName": "CodingKey",
-                "usr": "s:s9CodingKeyP",
-                "mangledName": "$ss9CodingKeyP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Copyable",
                 "printedName": "Copyable",
                 "usr": "s:s8CopyableP",
@@ -11552,6 +11538,13 @@
                 "printedName": "Escapable",
                 "usr": "s:s9EscapableP",
                 "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
               },
               {
                 "kind": "Conformance",
@@ -11584,6 +11577,13 @@
               },
               {
                 "kind": "Conformance",
+                "name": "CodingKey",
+                "printedName": "CodingKey",
+                "usr": "s:s9CodingKeyP",
+                "mangledName": "$ss9CodingKeyP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "CustomDebugStringConvertible",
                 "printedName": "CustomDebugStringConvertible",
                 "usr": "s:s28CustomDebugStringConvertibleP",
@@ -11602,20 +11602,6 @@
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
-                "name": "SendableMetatype",
-                "printedName": "SendableMetatype",
-                "usr": "s:s16SendableMetatypeP",
-                "mangledName": "$ss16SendableMetatypeP"
               }
             ]
           },
@@ -11779,48 +11765,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -11835,10 +11779,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
@@ -11849,10 +11793,52 @@
           },
           {
             "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -12448,13 +12434,6 @@
             "conformances": [
               {
                 "kind": "Conformance",
-                "name": "CodingKey",
-                "printedName": "CodingKey",
-                "usr": "s:s9CodingKeyP",
-                "mangledName": "$ss9CodingKeyP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Copyable",
                 "printedName": "Copyable",
                 "usr": "s:s8CopyableP",
@@ -12466,6 +12445,13 @@
                 "printedName": "Escapable",
                 "usr": "s:s9EscapableP",
                 "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
               },
               {
                 "kind": "Conformance",
@@ -12498,6 +12484,13 @@
               },
               {
                 "kind": "Conformance",
+                "name": "CodingKey",
+                "printedName": "CodingKey",
+                "usr": "s:s9CodingKeyP",
+                "mangledName": "$ss9CodingKeyP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "CustomDebugStringConvertible",
                 "printedName": "CustomDebugStringConvertible",
                 "usr": "s:s28CustomDebugStringConvertibleP",
@@ -12516,20 +12509,6 @@
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
-                "name": "SendableMetatype",
-                "printedName": "SendableMetatype",
-                "usr": "s:s16SendableMetatypeP",
-                "mangledName": "$ss16SendableMetatypeP"
               }
             ]
           },
@@ -12604,48 +12583,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -12660,10 +12597,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
@@ -12674,10 +12611,52 @@
           },
           {
             "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -13304,13 +13283,6 @@
             "conformances": [
               {
                 "kind": "Conformance",
-                "name": "CodingKey",
-                "printedName": "CodingKey",
-                "usr": "s:s9CodingKeyP",
-                "mangledName": "$ss9CodingKeyP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Copyable",
                 "printedName": "Copyable",
                 "usr": "s:s8CopyableP",
@@ -13322,6 +13294,13 @@
                 "printedName": "Escapable",
                 "usr": "s:s9EscapableP",
                 "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
               },
               {
                 "kind": "Conformance",
@@ -13354,6 +13333,13 @@
               },
               {
                 "kind": "Conformance",
+                "name": "CodingKey",
+                "printedName": "CodingKey",
+                "usr": "s:s9CodingKeyP",
+                "mangledName": "$ss9CodingKeyP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "CustomDebugStringConvertible",
                 "printedName": "CustomDebugStringConvertible",
                 "usr": "s:s28CustomDebugStringConvertibleP",
@@ -13372,20 +13358,6 @@
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
-                "name": "SendableMetatype",
-                "printedName": "SendableMetatype",
-                "usr": "s:s16SendableMetatypeP",
-                "mangledName": "$ss16SendableMetatypeP"
               }
             ]
           },
@@ -13526,48 +13498,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -13582,10 +13512,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
@@ -13596,10 +13526,52 @@
           },
           {
             "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -13722,52 +13694,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -13778,10 +13708,52 @@
           },
           {
             "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -14047,17 +14019,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
             "name": "Escapable",
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -14456,52 +14428,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -14512,10 +14442,52 @@
           },
           {
             "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -16787,52 +16759,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -16843,10 +16773,52 @@
           },
           {
             "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -16857,10 +16829,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           },
           {
             "kind": "Conformance",
@@ -16868,13 +16840,6 @@
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
             "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       }
@@ -16883,1435 +16848,1435 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Log.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Log.swift",
       "kind": "StringLiteral",
       "offset": 169,
       "length": 25,
       "value": "\"yyyy-MM-dd HH:mm:ss.SSS\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Log.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Log.swift",
       "kind": "StringLiteral",
       "offset": 224,
       "length": 3,
       "value": "\"[\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Log.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Log.swift",
       "kind": "StringLiteral",
       "offset": 258,
       "length": 3,
       "value": "\"]\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Log.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Log.swift",
       "kind": "StringLiteral",
       "offset": 285,
       "length": 7,
       "value": "\"Error\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Log.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Log.swift",
       "kind": "StringLiteral",
       "offset": 315,
       "length": 6,
       "value": "\"Info\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Log.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Log.swift",
       "kind": "StringLiteral",
       "offset": 345,
       "length": 7,
       "value": "\"Debug\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Log.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Log.swift",
       "kind": "StringLiteral",
       "offset": 376,
       "length": 3,
       "value": "\" \""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Log.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Log.swift",
       "kind": "StringLiteral",
       "offset": 407,
       "length": 3,
       "value": "\">\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
       "offset": 261,
       "length": 10,
       "value": "\"store_id\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
       "offset": 310,
       "length": 24,
       "value": "\"number_of_installments\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
       "offset": 364,
       "length": 14,
       "value": "\"order_number\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
       "offset": 402,
       "length": 8,
       "value": "\"is_sdk\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
       "offset": 437,
       "length": 10,
       "value": "\"language\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
       "offset": 474,
       "length": 10,
       "value": "\"currency\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
       "offset": 509,
       "length": 8,
       "value": "\"amount\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
       "offset": 540,
       "length": 6,
       "value": "\"cart\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
       "offset": 580,
       "length": 18,
       "value": "\"require_complete\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
       "offset": 629,
       "length": 14,
       "value": "\"subscription\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
       "offset": 675,
       "length": 16,
       "value": "\"payment_number\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
       "offset": 720,
       "length": 13,
       "value": "\"best_before\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
       "offset": 766,
       "length": 17,
       "value": "\"discount_amount\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
       "offset": 808,
       "length": 8,
       "value": "\"ccType\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
       "offset": 850,
       "length": 18,
       "value": "\"installments_map\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
       "offset": 896,
       "length": 11,
       "value": "\"signature\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
       "offset": 936,
       "length": 13,
       "value": "\"sdk_version\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
       "offset": 975,
       "length": 9,
       "value": "\"version\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
       "offset": 1017,
       "length": 17,
       "value": "\"callback_scheme\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
       "offset": 1067,
       "length": 17,
       "value": "\"checkout_result\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
       "offset": 1119,
       "length": 18,
       "value": "\"CFBundleURLTypes\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
       "offset": 1171,
       "length": 17,
       "value": "\"CFBundleURLName\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
       "offset": 1225,
       "length": 20,
       "value": "\"CFBundleURLSchemes\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
       "offset": 1273,
       "length": 8,
       "value": "\"%02hhx\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
       "offset": 1318,
       "length": 23,
       "value": "\"user_card_profiles_id\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
       "offset": 1375,
       "length": 19,
       "value": "\"use_card_profiles\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
       "offset": 1426,
       "length": 16,
       "value": "\"voucher_amount\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
       "offset": 1478,
       "length": 20,
       "value": "\"creditor_reference\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
       "offset": 1527,
       "length": 13,
       "value": "\"debtor_iban\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
       "offset": 1572,
       "length": 17,
       "value": "\"shop_account_id\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
       "offset": 1616,
       "length": 11,
       "value": "\"hide_tabs\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/CorvusWalletSDK+Internal.swift",
       "kind": "StringLiteral",
       "offset": 1653,
       "length": 10,
       "value": "\"hide_tab\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/CorvusWallet.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/CorvusWallet.swift",
       "kind": "StringLiteral",
       "offset": 495,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Checkout.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Checkout.swift",
       "kind": "BooleanLiteral",
       "offset": 884,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
       "offset": 194,
       "length": 20,
       "value": "\"cardholder_address\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
       "offset": 247,
       "length": 17,
       "value": "\"cardholder_city\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
       "offset": 300,
       "length": 20,
       "value": "\"cardholder_country\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
       "offset": 360,
       "length": 25,
       "value": "\"cardholder_country_code\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
       "offset": 419,
       "length": 18,
       "value": "\"cardholder_email\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
       "offset": 470,
       "length": 17,
       "value": "\"cardholder_name\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
       "offset": 523,
       "length": 20,
       "value": "\"cardholder_surname\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
       "offset": 577,
       "length": 18,
       "value": "\"cardholder_phone\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
       "offset": 631,
       "length": 21,
       "value": "\"cardholder_zip_code\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
       "offset": 1808,
       "length": 5,
       "value": "\"{\r\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
       "offset": 1828,
       "length": 40,
       "value": "\"\t\tfirstName: \""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
       "offset": 1865,
       "length": 1,
       "value": "\"\r\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
       "offset": 1883,
       "length": 38,
       "value": "\"\t\tlastName: \""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
       "offset": 1918,
       "length": 1,
       "value": "\"\r\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
       "offset": 1936,
       "length": 36,
       "value": "\"\t\taddress: \""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
       "offset": 1969,
       "length": 1,
       "value": "\"\r\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
       "offset": 1987,
       "length": 30,
       "value": "\"\t\tcity: \""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
       "offset": 2014,
       "length": 1,
       "value": "\"\r\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
       "offset": 2032,
       "length": 28,
       "value": "\"\t\tzip: \""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
       "offset": 2057,
       "length": 1,
       "value": "\"\r\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
       "offset": 2075,
       "length": 36,
       "value": "\"\t\tcountry: \""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
       "offset": 2108,
       "length": 1,
       "value": "\"\r\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
       "offset": 2126,
       "length": 44,
       "value": "\"\t\tcountryCode: \""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
       "offset": 2167,
       "length": 1,
       "value": "\"\r\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
       "offset": 2185,
       "length": 32,
       "value": "\"\t\temail: \""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
       "offset": 2214,
       "length": 1,
       "value": "\"\r\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
       "offset": 2232,
       "length": 32,
       "value": "\"\t\tphone: \""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
       "offset": 2261,
       "length": 1,
       "value": "\"\r\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Cardholder+Internal.swift",
       "kind": "StringLiteral",
       "offset": 2279,
       "length": 3,
       "value": "\"}\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/Language.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/Language.swift",
       "kind": "StringLiteral",
       "offset": 168,
       "length": 4,
       "value": "\"en\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/Language.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/Language.swift",
       "kind": "StringLiteral",
       "offset": 193,
       "length": 4,
       "value": "\"hr\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/Language.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/Language.swift",
       "kind": "StringLiteral",
       "offset": 218,
       "length": 4,
       "value": "\"rs\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/Language.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/Language.swift",
       "kind": "StringLiteral",
       "offset": 243,
       "length": 4,
       "value": "\"ba\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/Language.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/Language.swift",
       "kind": "StringLiteral",
       "offset": 268,
       "length": 4,
       "value": "\"sq\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/Language.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/Language.swift",
       "kind": "IntegerLiteral",
       "offset": 334,
       "length": 2,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/Language.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/Language.swift",
       "kind": "IntegerLiteral",
       "offset": 346,
       "length": 2,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/Language.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/Language.swift",
       "kind": "IntegerLiteral",
       "offset": 358,
       "length": 2,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/Language.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/Language.swift",
       "kind": "IntegerLiteral",
       "offset": 370,
       "length": 2,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 179,
       "length": 5,
       "value": "\"HRK\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 206,
       "length": 5,
       "value": "\"EUR\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 233,
       "length": 5,
       "value": "\"RSD\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 260,
       "length": 5,
       "value": "\"BAM\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 287,
       "length": 5,
       "value": "\"AUD\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 314,
       "length": 5,
       "value": "\"CAD\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 341,
       "length": 5,
       "value": "\"CZK\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 368,
       "length": 5,
       "value": "\"DKK\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 395,
       "length": 5,
       "value": "\"HUF\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 422,
       "length": 5,
       "value": "\"JPY\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 449,
       "length": 5,
       "value": "\"NOK\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 476,
       "length": 5,
       "value": "\"SEK\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 503,
       "length": 5,
       "value": "\"CHF\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 530,
       "length": 5,
       "value": "\"GBP\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 557,
       "length": 5,
       "value": "\"USD\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 584,
       "length": 5,
       "value": "\"PLN\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 626,
       "length": 4,
       "value": "\"kn\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 654,
       "length": 5,
       "value": "\"€\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 683,
       "length": 5,
       "value": "\"din\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 712,
       "length": 4,
       "value": "\"KM\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 740,
       "length": 4,
       "value": "\"A$\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 768,
       "length": 4,
       "value": "\"C$\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 796,
       "length": 5,
       "value": "\"Kč\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 825,
       "length": 5,
       "value": "\"Kr.\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 854,
       "length": 4,
       "value": "\"Ft\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 882,
       "length": 4,
       "value": "\"¥\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 910,
       "length": 4,
       "value": "\"kr\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 938,
       "length": 4,
       "value": "\"kr\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 966,
       "length": 5,
       "value": "\"CHf\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 995,
       "length": 4,
       "value": "\"£\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 1023,
       "length": 5,
       "value": "\"US$\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "StringLiteral",
       "offset": 1052,
       "length": 5,
       "value": "\"zł\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "IntegerLiteral",
       "offset": 1125,
       "length": 3,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "IntegerLiteral",
       "offset": 1138,
       "length": 3,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "IntegerLiteral",
       "offset": 1151,
       "length": 3,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "IntegerLiteral",
       "offset": 1164,
       "length": 3,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "IntegerLiteral",
       "offset": 1177,
       "length": 3,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "IntegerLiteral",
       "offset": 1190,
       "length": 3,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "IntegerLiteral",
       "offset": 1203,
       "length": 3,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "IntegerLiteral",
       "offset": 1216,
       "length": 3,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "IntegerLiteral",
       "offset": 1229,
       "length": 3,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "IntegerLiteral",
       "offset": 1242,
       "length": 3,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "IntegerLiteral",
       "offset": 1255,
       "length": 3,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "IntegerLiteral",
       "offset": 1268,
       "length": 3,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "IntegerLiteral",
       "offset": 1281,
       "length": 3,
       "value": "13"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "IntegerLiteral",
       "offset": 1294,
       "length": 3,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/Currency.swift",
       "kind": "IntegerLiteral",
       "offset": 1307,
       "length": 3,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Enum\/Translation.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Enum\/Translation.swift",
       "kind": "StringLiteral",
       "offset": 263,
       "length": 20,
       "value": "\"InstallWalletAlert\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Enum\/Translation.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Enum\/Translation.swift",
       "kind": "StringLiteral",
       "offset": 299,
       "length": 5,
       "value": "\"Yes\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Enum\/Translation.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Enum\/Translation.swift",
       "kind": "StringLiteral",
       "offset": 319,
       "length": 4,
       "value": "\"No\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Enum\/Translation.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Enum\/Translation.swift",
       "kind": "StringLiteral",
       "offset": 342,
       "length": 8,
       "value": "\"Cancel\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Enum\/Translation.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Enum\/Translation.swift",
       "kind": "StringLiteral",
       "offset": 379,
       "length": 18,
       "value": "\"WebCheckoutTitle\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/CartItem+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/CartItem+Internal.swift",
       "kind": "StringLiteral",
       "offset": 192,
       "length": 5,
       "value": "\" x \""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/CartItem+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/CartItem+Internal.swift",
       "kind": "StringLiteral",
       "offset": 229,
       "length": 4,
       "value": "\", \""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Extensions\/Bool.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Extensions\/Bool.swift",
       "kind": "StringLiteral",
       "offset": 164,
       "length": 6,
       "value": "\"true\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Extensions\/Bool.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Extensions\/Bool.swift",
       "kind": "StringLiteral",
       "offset": 197,
       "length": 7,
       "value": "\"false\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
       "kind": "StringLiteral",
       "offset": 170,
       "length": 6,
       "value": "\"none\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
       "kind": "StringLiteral",
       "offset": 199,
       "length": 6,
       "value": "\"amex\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
       "kind": "StringLiteral",
       "offset": 230,
       "length": 8,
       "value": "\"diners\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
       "kind": "StringLiteral",
       "offset": 265,
       "length": 10,
       "value": "\"discover\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
       "kind": "StringLiteral",
       "offset": 301,
       "length": 9,
       "value": "\"maestro\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
       "kind": "StringLiteral",
       "offset": 335,
       "length": 8,
       "value": "\"master\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
       "kind": "StringLiteral",
       "offset": 366,
       "length": 6,
       "value": "\"visa\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
       "kind": "StringLiteral",
       "offset": 395,
       "length": 6,
       "value": "\"dina\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
       "kind": "StringLiteral",
       "offset": 423,
       "length": 5,
       "value": "\"jcb\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
       "kind": "IntegerLiteral",
       "offset": 492,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
       "kind": "IntegerLiteral",
       "offset": 506,
       "length": 6,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
       "kind": "IntegerLiteral",
       "offset": 522,
       "length": 8,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
       "kind": "IntegerLiteral",
       "offset": 540,
       "length": 7,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
       "kind": "IntegerLiteral",
       "offset": 557,
       "length": 6,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
       "kind": "IntegerLiteral",
       "offset": 573,
       "length": 4,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
       "kind": "IntegerLiteral",
       "offset": 587,
       "length": 4,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/CardType.swift",
       "kind": "IntegerLiteral",
       "offset": 601,
       "length": 3,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/CheckoutResult.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/CheckoutResult.swift",
       "kind": "IntegerLiteral",
       "offset": 183,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/CheckoutResult.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/CheckoutResult.swift",
       "kind": "IntegerLiteral",
       "offset": 194,
       "length": 8,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/CheckoutResult.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/CheckoutResult.swift",
       "kind": "IntegerLiteral",
       "offset": 212,
       "length": 12,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/CheckoutResult.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/CheckoutResult.swift",
       "kind": "IntegerLiteral",
       "offset": 234,
       "length": 13,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/CheckoutResult.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/CheckoutResult.swift",
       "kind": "IntegerLiteral",
       "offset": 257,
       "length": 16,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/UI\/WebView.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/UI\/WebView.swift",
       "kind": "StringLiteral",
       "offset": 199,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/UI\/WebView.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/UI\/WebView.swift",
       "kind": "StringLiteral",
       "offset": 237,
       "length": 16,
       "value": "\"Content-Length\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/UI\/WebView.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/UI\/WebView.swift",
       "kind": "StringLiteral",
       "offset": 283,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/UI\/WebView.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/UI\/WebView.swift",
       "kind": "StringLiteral",
       "offset": 333,
       "length": 35,
       "value": "\"application\/x-www-form-urlencoded\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Global.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Global.swift",
       "kind": "IntegerLiteral",
       "offset": 168,
       "length": 10,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Global.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Global.swift",
       "kind": "StringLiteral",
       "offset": 253,
       "length": 15,
       "value": "\"corvuswallet:\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Global.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Global.swift",
       "kind": "StringLiteral",
       "offset": 315,
       "length": 23,
       "value": "\"corvuswallet.callback\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Global.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Global.swift",
       "kind": "StringLiteral",
       "offset": 461,
       "length": 54,
       "value": "\"https:\/\/apps.apple.com\/us\/app\/corvuspay\/id1525351931\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Global.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Global.swift",
       "kind": "StringLiteral",
       "offset": 1130,
       "length": 37,
       "value": "\"https:\/\/shop.corvus.dev\/home\/cancel\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Global.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Global.swift",
       "kind": "StringLiteral",
       "offset": 1203,
       "length": 38,
       "value": "\"https:\/\/shop.corvus.dev\/home\/success\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Global.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Global.swift",
       "kind": "StringLiteral",
       "offset": 1342,
       "length": 17,
       "value": "\"CorvusWalletSDK\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Global.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Global.swift",
       "kind": "StringLiteral",
       "offset": 1429,
       "length": 18,
       "value": "\"CorvusWalletSDK.\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Global.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Global.swift",
       "kind": "StringLiteral",
       "offset": 1499,
       "length": 22,
       "value": "\"DidShowWalletInstall\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Global.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Global.swift",
       "kind": "StringLiteral",
       "offset": 1582,
       "length": 18,
       "value": "\"CorvusWalletSDK.\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Extensions\/String.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Extensions\/String.swift",
       "kind": "StringLiteral",
       "offset": 173,
       "length": 6,
       "value": "\"%.2f\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Extensions\/String.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Extensions\/String.swift",
       "kind": "StringLiteral",
       "offset": 203,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Extensions\/String.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Extensions\/String.swift",
       "kind": "StringLiteral",
       "offset": 228,
       "length": 8,
       "value": "\"<null>\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Installments+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Installments+Internal.swift",
       "kind": "StringLiteral",
       "offset": 189,
       "length": 13,
       "value": "\"payment_all\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Installments+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Installments+Internal.swift",
       "kind": "StringLiteral",
       "offset": 238,
       "length": 21,
       "value": "\"payment_all_dynamic\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Installments+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Installments+Internal.swift",
       "kind": "StringLiteral",
       "offset": 289,
       "length": 14,
       "value": "\"payment_amex\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Installments+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Installments+Internal.swift",
       "kind": "StringLiteral",
       "offset": 333,
       "length": 14,
       "value": "\"payment_dina\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Installments+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Installments+Internal.swift",
       "kind": "StringLiteral",
       "offset": 379,
       "length": 16,
       "value": "\"payment_diners\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Installments+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Installments+Internal.swift",
       "kind": "StringLiteral",
       "offset": 425,
       "length": 14,
       "value": "\"payment_visa\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Installments+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Installments+Internal.swift",
       "kind": "StringLiteral",
       "offset": 471,
       "length": 16,
       "value": "\"payment_master\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Installments+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Installments+Internal.swift",
       "kind": "StringLiteral",
       "offset": 520,
       "length": 17,
       "value": "\"payment_maestro\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Installments+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Installments+Internal.swift",
       "kind": "StringLiteral",
       "offset": 571,
       "length": 18,
       "value": "\"payment_discover\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Installments+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Installments+Internal.swift",
       "kind": "StringLiteral",
       "offset": 618,
       "length": 13,
       "value": "\"payment_jcb\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/Model\/Installments+Internal.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/Model\/Installments+Internal.swift",
       "kind": "StringLiteral",
       "offset": 664,
       "length": 16,
       "value": "\"payment_number\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Internal\/UI\/WebViewController.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Internal\/UI\/WebViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 425,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/InstallmentsMapBuilder.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/InstallmentsMapBuilder.swift",
       "kind": "Array",
       "offset": 1084,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/InstallmentsMapBuilder.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/InstallmentsMapBuilder.swift",
       "kind": "StringLiteral",
       "offset": 2931,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/InstallmentsMapBuilder.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/InstallmentsMapBuilder.swift",
       "kind": "Array",
       "offset": 2973,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/InstallmentsMapBuilder.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/InstallmentsMapBuilder.swift",
       "kind": "IntegerLiteral",
       "offset": 3447,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/InstallmentsMapBuilder.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/InstallmentsMapBuilder.swift",
       "kind": "IntegerLiteral",
       "offset": 3482,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/InstallmentsMapBuilder.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/InstallmentsMapBuilder.swift",
       "kind": "IntegerLiteral",
       "offset": 3526,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/InstallmentsMapBuilder.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/InstallmentsMapBuilder.swift",
       "kind": "Array",
       "offset": 4006,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/LogLevel.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 169,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/LogLevel.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 180,
       "length": 5,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/LogLevel.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 195,
       "length": 4,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Enum\/LogLevel.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Enum\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 209,
       "length": 5,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/CorvusFrameConfiguration.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/CorvusFrameConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 1030,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/CorvusFrameConfiguration.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/CorvusFrameConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 1568,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/CorvusFrameConfiguration.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/CorvusFrameConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 1607,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/Model\/CorvusFrameConfiguration.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/Model\/CorvusFrameConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 3738,
       "length": 5,
       "value": "\"+=&\""
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/UI\/CorvusFrameView.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/UI\/CorvusFrameView.swift",
       "kind": "IntegerLiteral",
       "offset": 378,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/UI\/CorvusFrameView.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/UI\/CorvusFrameView.swift",
       "kind": "BooleanLiteral",
       "offset": 417,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/markoaras\/Documents\/corvus\/ios-sdk private\/CorvusWalletSDK\/Public\/UI\/CorvusFrameView.swift",
+      "filePath": "\/Users\/nenadtomov\/Desktop\/IOS_Apps\/ios-sdk\/CorvusWalletSDK\/Public\/UI\/CorvusFrameView.swift",
       "kind": "BooleanLiteral",
       "offset": 456,
       "length": 5,
