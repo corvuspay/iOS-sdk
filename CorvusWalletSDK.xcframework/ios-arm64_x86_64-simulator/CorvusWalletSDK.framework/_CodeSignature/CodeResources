@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/CorvusWalletSDK-Swift.h</key>
 		<data>
-		CnnFo5D0n7+GeBhtGtBJJ9bJLio=
+		myJN152k/67N4EnBNqWfgI5MqZQ=
 		</data>
 		<key>Headers/CorvusWalletSDK.h</key>
 		<data>
@@ -14,51 +14,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		KKeDKAjyxqBX8sEdfku97fB+ydg=
+		I6o19zzXkSegiT2BKHySQY7sGkI=
 		</data>
 		<key>Modules/CorvusWalletSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		ifXWmkHHRSOrXFIVO+hPaR2O0Kg=
+		LyqDBkrEv5KnsKpXD5o3jmWFJi0=
 		</data>
 		<key>Modules/CorvusWalletSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		GnIFfLWkI+cVpladPazOf3EBpdo=
+		6vjxnmLsNEP3JXWWh0gkVlAS7Ks=
 		</data>
 		<key>Modules/CorvusWalletSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		eYYqp17dopChu5NJT/ferVikthY=
+		3joylyQVggr3QjMaFhQFDwy8/Pw=
 		</data>
 		<key>Modules/CorvusWalletSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		GnIFfLWkI+cVpladPazOf3EBpdo=
+		6vjxnmLsNEP3JXWWh0gkVlAS7Ks=
 		</data>
 		<key>Modules/CorvusWalletSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		TG30nXPqTW5Qv6QINmcf72c6Ryw=
+		oQwjnC1mYDO03HDi6ZqhkCVW7/A=
 		</data>
 		<key>Modules/CorvusWalletSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		ifXWmkHHRSOrXFIVO+hPaR2O0Kg=
+		LyqDBkrEv5KnsKpXD5o3jmWFJi0=
 		</data>
 		<key>Modules/CorvusWalletSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		FV9gsDswcrur3aUp3KVpnPN45To=
+		+RIIQPK/pqBQsNkv0I0xs5gr2kI=
 		</data>
 		<key>Modules/CorvusWalletSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		yEoSMj/TtgG5nHtnS+0HtUf1Kyo=
+		DBBS2CJUIn6NGTlmRDl+bEReHdY=
 		</data>
 		<key>Modules/CorvusWalletSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		FV9gsDswcrur3aUp3KVpnPN45To=
+		+RIIQPK/pqBQsNkv0I0xs5gr2kI=
 		</data>
 		<key>Modules/CorvusWalletSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		i5k3XOx93Q5nsqnzBYeqFBCjwq8=
+		35J3Yj30O7ulkFVDNEbjftcjLlE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		UZjhyLVrqS68U07eR6xIllMnH98=
+		wnfPseUikjRye8sShZfBIY7a4Zs=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -67,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7zXmtdvzf5r53SGUvSBYpQn1hgZ7MHWYAIQ1EdNYt2g=
+			LqDQ8heg3CyBTUfAJiX/4tpJDi3NhQJ1tJX5wHVFh30=
 			</data>
 		</dict>
 		<key>Headers/CorvusWalletSDK.h</key>
@@ -81,77 +81,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LPiF23qJLpyF0YgHzNnyBhdbYLZexerKaY1makV78Es=
+			izzbSOEXwn/EJgewSAIAwK6qSM5Unlqv4DV8AbyZzFA=
 			</data>
 		</dict>
 		<key>Modules/CorvusWalletSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qr4p5QA3P/KlipPI4RrwaCiMqPY+32HuqKaAeeVVjOA=
+			xZK2tU3IIzb3H2y9ip6eVEpg60nlGaWO5RNzkq8cbLo=
 			</data>
 		</dict>
 		<key>Modules/CorvusWalletSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6iRErEDZ2NAaLhkL8rnLBSBRH6hU7qK+D05R9oLyy+E=
+			cMtValTFM1/aR+vJWk9L39lQjKpSafWkzGSC+Um8quU=
 			</data>
 		</dict>
 		<key>Modules/CorvusWalletSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qr4p5QA3P/KlipPI4RrwaCiMqPY+32HuqKaAeeVVjOA=
+			xZK2tU3IIzb3H2y9ip6eVEpg60nlGaWO5RNzkq8cbLo=
 			</data>
 		</dict>
 		<key>Modules/CorvusWalletSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VrTai/i2RzHyrLgykmpWOU5/fsMy0iEHiOtNcrLrxog=
+			ljJDC3onJ3gU9KHjIbscW++7LvRCg5jSGFik++RKnLo=
 			</data>
 		</dict>
 		<key>Modules/CorvusWalletSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LPiF23qJLpyF0YgHzNnyBhdbYLZexerKaY1makV78Es=
+			izzbSOEXwn/EJgewSAIAwK6qSM5Unlqv4DV8AbyZzFA=
 			</data>
 		</dict>
 		<key>Modules/CorvusWalletSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LKefCj0AYHMX5a1fkLWI+2pcH/TFd6HD8bNuo7NmSik=
+			mksPWUS425hJO/eLiXsTMnjzyjysIs4UZbRg7BpaqJ4=
 			</data>
 		</dict>
 		<key>Modules/CorvusWalletSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CkjRSu2HP1w0/eera0vF8LJDHtbFIHo37t64CQdyJ3o=
+			7g8RTpxN4Oc3fkrVN7UW2X35NelXW5525tmJ8GvM/+g=
 			</data>
 		</dict>
 		<key>Modules/CorvusWalletSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LKefCj0AYHMX5a1fkLWI+2pcH/TFd6HD8bNuo7NmSik=
+			mksPWUS425hJO/eLiXsTMnjzyjysIs4UZbRg7BpaqJ4=
 			</data>
 		</dict>
 		<key>Modules/CorvusWalletSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			82zt/e+DFMZCaUFBzkMf8z/yjBPr9eTJcWteNFhEq0U=
+			LGQJ/qUCHk4qG+HNkUAREQIauRf4flCN8kdu8PQdaos=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nGJiaLRwfpTKQ0pxsinv7Pb1nqkhUUm/CS30GBZQE8o=
+			rOaiQEg1a1fzcyPpFalEr6tlaTnzymZHXLdkFl/9wXE=
 			</data>
 		</dict>
 	</dict>

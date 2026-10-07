@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
-// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CorvusWalletSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CorvusWalletSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import CommonCrypto
 @_exported import CorvusWalletSDK
 import Foundation
@@ -344,15 +344,22 @@ public struct CorvusFrameStyle {
   public let fontSize: Swift.Int
   public let fontColor: Swift.String
   public let borderColor: Swift.String
-  public init(backgroundColor: Swift.String, fontFamily: Swift.String, fontSize: Swift.Int, fontColor: Swift.String, borderColor: Swift.String = "")
+  public let inputFontColor: Swift.String
+  public let cvvCancelBtnBackgroundColor: Swift.String
+  public let cvvCancelBtnFontColor: Swift.String
+  public let cvvSuccessBtnBackgroundColor: Swift.String
+  public let cvvSuccessBtnFontColor: Swift.String
+  public let cvvInputBackgroundColor: Swift.String
+  public init(backgroundColor: Swift.String, fontFamily: Swift.String, fontSize: Swift.Int, fontColor: Swift.String, borderColor: Swift.String = "", inputFontColor: Swift.String, cvvCancelBtnBackgroundColor: Swift.String, cvvCancelBtnFontColor: Swift.String, cvvSuccessBtnBackgroundColor: Swift.String, cvvSuccessBtnFontColor: Swift.String, cvvInputBackgroundColor: Swift.String)
 }
 public struct CorvusFrameOption {
-  public let showCvv: Swift.Bool
+  public let cvvOnly: Swift.Bool
   public let hideCorvusPayLogo: Swift.Bool
   public let locale: Swift.String
   public let layout: Swift.String
   public let showLabels: Swift.Bool
-  public init(showCvv: Swift.Bool, hideCorvusPayLogo: Swift.Bool, locale: Swift.String, layout: Swift.String = "", showLabels: Swift.Bool = false)
+  public let show3DSInFullScreen: Swift.Bool
+  public init(cvvOnly: Swift.Bool, hideCorvusPayLogo: Swift.Bool, locale: Swift.String, layout: Swift.String = "", showLabels: Swift.Bool = false, show3DSInFullScreen: Swift.Bool = true)
 }
 public struct CardPaymentResult {
   public let paymentId: Swift.String
@@ -388,16 +395,30 @@ extension CorvusWalletSDK.CorvusFrameDelegate {
   public func onCardInfo(cardInfo: Swift.String)
   public func onCardPaymentResult(result: CorvusWalletSDK.CardPaymentResult)
 }
+public enum ThreeDsPresentationMode {
+  case inline
+  case fullscreen
+  public static func == (a: CorvusWalletSDK.ThreeDsPresentationMode, b: CorvusWalletSDK.ThreeDsPresentationMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class CorvusFrameView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CorvusWalletSDK.CorvusFrameDelegate)?
+  @_Concurrency.MainActor @preconcurrency public var threeDsPresentationMode: CorvusWalletSDK.ThreeDsPresentationMode {
+    get
+  }
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
   @_Concurrency.MainActor @preconcurrency public func load(config: CorvusWalletSDK.CorvusFrameConfiguration)
   @discardableResult
-  @_Concurrency.MainActor @preconcurrency public func finishPayment(paymentId: Swift.String) async -> Any?
+  @_Concurrency.MainActor public func finishPayment(paymentId: Swift.String) async -> Any?
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func willMove(toWindow newWindow: UIKit.UIWindow?)
 }
 extension CorvusWalletSDK.CorvusFrameView : WebKit.WKNavigationDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
 }
@@ -431,3 +452,5 @@ extension CorvusWalletSDK.Discount.CodingKeys : Swift.RawRepresentable {}
 extension CorvusWalletSDK.LogLevel : Swift.Equatable {}
 extension CorvusWalletSDK.LogLevel : Swift.Hashable {}
 extension CorvusWalletSDK.LogLevel : Swift.RawRepresentable {}
+extension CorvusWalletSDK.ThreeDsPresentationMode : Swift.Equatable {}
+extension CorvusWalletSDK.ThreeDsPresentationMode : Swift.Hashable {}
