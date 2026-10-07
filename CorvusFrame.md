@@ -3,6 +3,7 @@
 `CorvusFrameView` is a hosted, WebView-based card payment form embedded directly in your app. The host app loads the view with a configuration, initialises a payment server-side to obtain a `paymentId`, calls `finishPayment` when the user confirms, and receives the result via a delegate/listener callback.
 
 Two integration flows are supported:
+
 - **Direct checkout** — cardholder enters card details fresh
 - **Saved card (session token)** — cardholder verifies a previously stored card
 
@@ -40,44 +41,77 @@ corvusFrameView.load(config, "test")
 | `publicKey` | `String` | ✓ | Merchant public key (`PK_test_...` or `PK_live_...`) |
 | `style` | `CorvusFrameStyle` | ✓ | Visual appearance |
 | `option` | `CorvusFrameOption` | ✓ | Behaviour flags |
-| `sessionToken` | `String?` | — | Provide for saved-card flow only |
+| `sessionToken` | `String?` | — | Provide for the saved-card flow only |
 
 ### `CorvusFrameStyle`
 
-| Parameter | Type | Example |
+| Parameter | Type | Description |
 |---|---|---|
-| `backgroundColor` | `String` (hex) | `"#ffffff"` |
-| `fontFamily` | `String` (CSS) | `"Arial"` |
-| `fontSize` | `Int` | `15` |
-| `fontColor` | `String` (hex) | `"#000000"` |
+| `backgroundColor` | `String` (hex) | Background color of the payment form. |
+| `fontFamily` | `String` | Font family used by the form. |
+| `fontSize` | `Int` | Font size used by the form. |
+| `fontColor` | `String` (hex) | Color of labels and text. |
+| `borderColor` | `String` (hex) | Border color of the form fields and container. |
+| `inputFontColor` | `String` (hex) | Color of text entered into input fields. |
+| `cvvCancelBtnBackgroundColor` | `String` (hex) | Background color of the CVV cancel button. |
+| `cvvCancelBtnFontColor` | `String` (hex) | Text color of the CVV cancel button. |
+| `cvvSuccessBtnBackgroundColor` | `String` (hex) | Background color of the CVV confirmation button. |
+| `cvvSuccessBtnFontColor` | `String` (hex) | Text color of the CVV confirmation button. |
+| `cvvInputBackgroundColor` | `String` (hex) | Background color of the CVV input field. |
+
+Colors must be provided as hexadecimal values, for example `"#ffffff"`.
 
 ### `CorvusFrameOption`
 
 | Parameter | Type | Description |
 |---|---|---|
-| `showCvv` | `Bool` | Show CVV input field |
-| `hideCorvusPayLogo` | `Bool` | Hide CorvusPay branding |
-| `locale` | `String` | Language: `"en"`, `"hr"`, `"rs"`, `"ba"`, `"sq"` |
+| `cvvOnly` | `Bool` | Set to `false` for the full card form. Set to `true` with `sessionToken` for saved-card CVV verification. |
+| `hideCorvusPayLogo` | `Bool` | Hides CorvusPay branding when set to `true`. |
+| `locale` | `String` | Language used for labels and validation messages, for example `"en"`. |
+| `layout` | `String` | Form layout, for example `"default"` or `"stacked"`. |
+| `showLabels` | `Bool` | Controls whether field labels are displayed. |
+| `show3DSInFullScreen` | `Bool` | Displays 3D Secure in full screen when `true`. The default value is `true`. |
 
-**iOS:**
+`showCvv` has been replaced with `cvvOnly`.
+
+### iOS
+
 ```swift
+let style = CorvusFrameStyle(
+    backgroundColor: "#ffffff",
+    fontFamily: "Arial",
+    fontSize: 15,
+    fontColor: "#000000",
+    borderColor: "#cccccc",
+    inputFontColor: "#000000",
+    cvvCancelBtnBackgroundColor: "#ffffff",
+    cvvCancelBtnFontColor: "#000000",
+    cvvSuccessBtnBackgroundColor: "#000000",
+    cvvSuccessBtnFontColor: "#ffffff",
+    cvvInputBackgroundColor: "#ffffff"
+)
+
+let option = CorvusFrameOption(
+    cvvOnly: false,
+    hideCorvusPayLogo: false,
+    locale: "en",
+    layout: "default",
+    showLabels: true,
+    show3DSInFullScreen: true
+)
+
 let config = CorvusFrameConfiguration(
     publicKey: "PK_test_...",
-    style: CorvusFrameStyle(
-        backgroundColor: "#ffffff",
-        fontFamily: "Arial",
-        fontSize: 15,
-        fontColor: "#000000"
-    ),
-    option: CorvusFrameOption(
-        showCvv: true,
-        hideCorvusPayLogo: false,
-        locale: "en"
-    )
+    style: style,
+    option: option,
+    sessionToken: nil
 )
 ```
 
-**Android:**
+On iOS, `show3DSInFullScreen` controls the 3D Secure presentation during `load(config:)`.
+
+### Android
+
 ```kotlin
 val config = CorvusFrameConfiguration(
     publicKey = "PK_test_...",
@@ -85,15 +119,35 @@ val config = CorvusFrameConfiguration(
         backgroundColor = "#ffffff",
         fontFamily = "Arial",
         fontSize = 15,
-        fontColor = "#000000"
+        fontColor = "#000000",
+        borderColor = "#cccccc",
+        inputFontColor = "#000000",
+        cvvCancelBtnBackgroundColor = "#ffffff",
+        cvvCancelBtnFontColor = "#000000",
+        cvvSuccessBtnBackgroundColor = "#000000",
+        cvvSuccessBtnFontColor = "#ffffff",
+        cvvInputBackgroundColor = "#ffffff"
     ),
     option = CorvusFrameOption(
-        showCvv = true,
+        cvvOnly = false,
         hideCorvusPayLogo = false,
-        locale = "en"
-    )
+        locale = "en",
+        layout = "default",
+        showLabels = true,
+        show3DSInFullScreen = true
+    ),
+    sessionToken = null
 )
 ```
+
+On Android, the native 3DS presentation mode can also be selected:
+
+```kotlin
+corvusFrameView.threeDsPresentationMode =
+    ThreeDsPresentationMode.FULLSCREEN
+```
+
+Available values are `ThreeDsPresentationMode.INLINE` and `ThreeDsPresentationMode.FULLSCREEN`. The default is `FULLSCREEN`.
 
 ---
 
@@ -131,17 +185,20 @@ corvusFrameView.load(config, "test")
 
 ## Direct checkout flow
 
-1. Collect cardholder billing details in the host app
-2. POST to your backend → `initPayment` → receive `paymentId`
-3. Wait for `onCardReady(true)` — card fields are valid
-4. Call `finishPayment(paymentId)`
-5. Handle `onCardPaymentResult` — on success, POST result to your backend → `checkPaymentResponse`
-6. Backend returns the CorvusPay token
+1. Collect cardholder billing details in the host app.
+2. POST to your backend → `initPayment` → receive `paymentId`.
+3. Wait for `onCardReady(true)` — card fields are valid.
+4. Call `finishPayment(paymentId)`.
+5. Handle `onCardPaymentResult` — on success, POST result to your backend → `checkPaymentResponse`.
+6. Backend returns the CorvusPay token.
 
-**iOS:**
+### iOS
+
 ```swift
 // Step 4
-Task { await corvusFrameView.finishPayment(paymentId: paymentId) }
+Task {
+    await corvusFrameView.finishPayment(paymentId: paymentId)
+}
 
 // Step 5
 func onCardPaymentResult(result: CardPaymentResult) {
@@ -149,13 +206,15 @@ func onCardPaymentResult(result: CardPaymentResult) {
         showError(result.displayMessage)
         return
     }
+
     Task {
         try await backend.checkPaymentResponse(result: result)
     }
 }
 ```
 
-**Android:**
+### Android
+
 ```kotlin
 // Step 4
 corvusFrameView.finishPayment(paymentId)
@@ -163,7 +222,9 @@ corvusFrameView.finishPayment(paymentId)
 // Step 5
 override fun onCardPaymentResult(result: CardPaymentResult) {
     if (result.status.lowercase() == "ok") {
-        lifecycleScope.launch { backend.checkPaymentResponse(result) }
+        lifecycleScope.launch {
+            backend.checkPaymentResponse(result)
+        }
     }
 }
 ```
@@ -172,10 +233,11 @@ override fun onCardPaymentResult(result: CardPaymentResult) {
 
 ## Saved card (session token) flow
 
-1. Have a `tokenValue` + `userCardProfilesId` from a previous payment
-2. POST to your backend → `fetchSessionToken(tokenValue, userCardProfilesId)` → receive `sessionToken`
-3. Pass `sessionToken` in `CorvusFrameConfiguration`
-4. Continue from step 2 of the direct checkout flow
+1. Have a `tokenValue` and `userCardProfilesId` from a previous payment.
+2. POST to your backend → `fetchSessionToken(tokenValue, userCardProfilesId)` → receive `sessionToken`.
+3. Pass `sessionToken` in `CorvusFrameConfiguration`.
+4. Set `cvvOnly` to `true`.
+5. Continue from step 2 of the direct checkout flow.
 
 ---
 
@@ -207,10 +269,10 @@ All callbacks are dispatched on the main thread. All have empty default implemen
 | Fatal error | `onError(errorMsg: String)` | `onError(String)` | Unrecoverable error inside the frame |
 | Modal open | `onShowModal(height: Int, width: Int)` | `onShowModal(Int, Int)` | 3DS modal opening |
 | Modal close | `onHideModal(height: Int, width: Int)` | `onHideModal(Int, Int)` | 3DS modal closed |
-| Installments | `onInstallmentsCalculated(config: String)` | `onInstallmentsCalculated(String)` | Installment options computed (JSON) |
+| Installments | `onInstallmentsCalculated(config: String)` | `onInstallmentsCalculated(String)` | Installment options computed as JSON |
 | Discount | `onCanDiscountedAmountBeUsed(canUse: Bool)` | `onCanDiscountedAmountBeUsed(Boolean)` | Discount eligibility result |
-| Card info | `onCardInfo(cardInfo: String)` | `onCardInfo(String)` | Detected card type / BIN info (JSON) |
-| **Result** | `onCardPaymentResult(result: CardPaymentResult)` | `onCardPaymentResult(CardPaymentResult)` | Payment complete |
+| Card info | `onCardInfo(cardInfo: String)` | `onCardInfo(String)` | Detected card type or BIN information |
+| Result | `onCardPaymentResult(result: CardPaymentResult)` | `onCardPaymentResult(CardPaymentResult)` | Payment complete |
 
 ---
 
